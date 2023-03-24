@@ -16,9 +16,7 @@
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "paths": {
-          "ny-components": [
-            "dist/ny-components"
-          ]
+            "@namitoyokota/components": ["dist/ny-components"]
         },
         "importHelpers": true,
         "target": "ES2022",
