@@ -1,6 +1,15 @@
 {
     "name": "@namitoyokota/components",
-    "version": "0.0.0",
+    "version": "0.0.1",
+    "description": "Angular component library for myself",
+    "author": {
+        "name": "Namito Yokota",
+        "email": "namitoyokota@icloud.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/namitoyokota/components"
+    },
     "peerDependencies": {
         "@angular/common": "^15.2.0",
         "@angular/core": "^15.2.0"
