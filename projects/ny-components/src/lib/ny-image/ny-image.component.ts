@@ -1,8 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'ny-image',
-    template: ` <p>ny-image</p> `,
-    styles: [],
+    templateUrl: './ny-image.component.html',
+    styleUrls: ['./ny-image.component.scss'],
 })
-export class NyImageComponent {}
+export class NyImageComponent {
+    /** Path of the image */
+    @Input() src: string = '';
+
+    /** Indicates whether image has loaded */
+    loaded = false;
+}
