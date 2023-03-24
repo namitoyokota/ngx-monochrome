@@ -1491,10 +1491,10 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@namitoyokota/components@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@namitoyokota/components/-/components-0.0.2.tgz#3edf89a61e9561dd6d57cdef0f919688f5652daa"
-  integrity sha512-vVHJjxkeT6zNvBqPO7+x6PXRPCwOMfV+trE8vpksQBA95gLB/WuFMkuQP1LwEBEcE9pYjkh/j9LTSyp3tYAkgQ==
+"@namitoyokota/components@latest":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@namitoyokota/components/-/components-0.0.4.tgz#18b3b78a404ea22ccaea0e52dc9f951793cc3c7c"
+  integrity sha512-OGQ0RuwKPfcH9at1L9h+QG1yFuFvRWQLpgItQtQaXArkA/DXiP8gVr94Fbmc8OQ5LsHJL+3GDv1yqReKjmTIdQ==
   dependencies:
     tslib "^2.3.0"
 
@@ -5909,9 +5909,9 @@ terser@5.16.3:
     source-map-support "~0.5.20"
 
 terser@^5.16.5:
-  version "5.16.6"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.16.6.tgz#f6c7a14a378ee0630fbe3ac8d1f41b4681109533"
-  integrity sha512-IBZ+ZQIA9sMaXmRZCUMDjNH0D5AQQfdn4WUjHL0+1lF4TP1IHRJbrhb6fNaXWikrYQTSkb7SLxkeXAiy1p7mbg==
+  version "5.16.8"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.16.8.tgz#ccde583dabe71df3f4ed02b65eb6532e0fae15d5"
+  integrity sha512-QI5g1E/ef7d+PsDifb+a6nnVgC4F22Bg6T0xrBrz6iloVB4PUkkunp6V8nzoOOZJIzjWVdAGqCdlKlhLq/TbIA==
   dependencies:
     "@jridgewell/source-map" "^0.3.2"
     acorn "^8.5.0"
