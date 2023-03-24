@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "common": {
+        "ny-components": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/common",
+                        "outputPath": "dist/ny-components",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -58,10 +58,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "common:build:production"
+                            "browserTarget": "ny-components:build:production"
                         },
                         "development": {
-                            "browserTarget": "common:build:development"
+                            "browserTarget": "ny-components:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "common:build"
+                        "browserTarget": "ny-components:build"
                     }
                 },
                 "test": {
@@ -86,37 +86,34 @@
             }
         },
         "components": {
-          "projectType": "library",
-          "root": "projects/components",
-          "sourceRoot": "projects/components/src",
-          "prefix": "lib",
-          "architect": {
-            "build": {
-              "builder": "@angular-devkit/build-angular:ng-packagr",
-              "options": {
-                "project": "projects/components/ng-package.json"
-              },
-              "configurations": {
-                "production": {
-                  "tsConfig": "projects/components/tsconfig.lib.prod.json"
+            "projectType": "library",
+            "root": "projects/components",
+            "sourceRoot": "projects/components/src",
+            "prefix": "lib",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
+                    "options": {
+                        "project": "projects/components/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "projects/components/tsconfig.lib.prod.json"
+                        },
+                        "development": {
+                            "tsConfig": "projects/components/tsconfig.lib.json"
+                        }
+                    },
+                    "defaultConfiguration": "production"
                 },
-                "development": {
-                  "tsConfig": "projects/components/tsconfig.lib.json"
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "tsConfig": "projects/components/tsconfig.spec.json",
+                        "polyfills": ["zone.js", "zone.js/testing"]
+                    }
                 }
-              },
-              "defaultConfiguration": "production"
-            },
-            "test": {
-              "builder": "@angular-devkit/build-angular:karma",
-              "options": {
-                "tsConfig": "projects/components/tsconfig.spec.json",
-                "polyfills": [
-                  "zone.js",
-                  "zone.js/testing"
-                ]
-              }
             }
-          }
         }
     }
 }

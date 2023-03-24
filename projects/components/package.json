@@ -1,8 +1,8 @@
 {
-    "name": "@namito/components",
+    "name": "ny-components",
     "version": "0.0.1",
     "peerDependencies": {
-        "@angular/common": "^15.2.0",
+        "@angular/ny-components": "^15.2.0",
         "@angular/core": "^15.2.0"
     },
     "dependencies": {
