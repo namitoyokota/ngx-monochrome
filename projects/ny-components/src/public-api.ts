@@ -2,5 +2,7 @@
  * Public API Surface of ny-components
  */
 
-export * from './lib/ny-components.component';
-export * from './lib/ny-components.module';
+export * from './lib/ny-hyperlink/ny-hyperlink.component';
+export * from './lib/ny-hyperlink/ny-hyperlink.module';
+export * from './lib/ny-image/ny-image.component';
+export * from './lib/ny-image/ny-image.module';
