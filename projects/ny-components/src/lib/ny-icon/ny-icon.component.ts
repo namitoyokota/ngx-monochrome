@@ -7,5 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class NyIconComponent {
     /** Name of the font awesome icon */
-    @Input() name: string = '';
+    @Input() name = 'fa-face-smile';
+
+    /** Type of the icon */
+    @Input() type = 'fa-solid';
 }
