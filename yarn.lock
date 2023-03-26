@@ -1491,10 +1491,10 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@namitoyokota/components@latest":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@namitoyokota/components/-/components-0.0.4.tgz#18b3b78a404ea22ccaea0e52dc9f951793cc3c7c"
-  integrity sha512-OGQ0RuwKPfcH9at1L9h+QG1yFuFvRWQLpgItQtQaXArkA/DXiP8gVr94Fbmc8OQ5LsHJL+3GDv1yqReKjmTIdQ==
+"@namitoyokota/ng-components@latest":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@namitoyokota/ng-components/-/ng-components-0.0.2.tgz#95245ebbbdc278a74616214a3c069e7d5c7cd358"
+  integrity sha512-P6dzKPTcWGAZ0fj92LqofdH1n8h0jCC2FGBNh3lm9OB5wm4kqyrhXXafhgmDzh9/Ev2eXjId3ZjeE/Zr/WnT3g==
   dependencies:
     tslib "^2.3.0"
 

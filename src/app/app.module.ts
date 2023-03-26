@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NyHyperlinkModule, NyIconModule, NyImageModule } from '@namitoyokota/components';
+import { NyHyperlinkModule, NyIconModule, NyImageModule } from '@namitoyokota/ng-components';
 
 import { AppComponent } from './app.component';
 
