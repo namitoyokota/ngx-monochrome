@@ -1,6 +1,6 @@
 {
-    "name": "@namitoyokota/components",
-    "version": "0.0.4",
+    "name": "@namitoyokota/ng-components",
+    "version": "0.0.1",
     "description": "Angular component library for myself",
     "author": {
         "name": "Namito Yokota",
