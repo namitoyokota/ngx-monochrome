@@ -1,6 +1,6 @@
 name: Publish Package to NPM
 on:
-    PUSH:
+    push:
         branches: [master]
 jobs:
     build:
