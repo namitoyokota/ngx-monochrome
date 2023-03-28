@@ -11,4 +11,7 @@ export class NyIconComponent {
 
     /** Type of the icon */
     @Input() type = 'fa-solid';
+
+    /** Whether icon can be clicked */
+    @Input() clickable = false;
 }
