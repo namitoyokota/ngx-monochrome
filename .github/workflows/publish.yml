@@ -19,6 +19,7 @@ jobs:
               with:
                   file-name: ./projects/ng-components/package.json
                   file-url: https://unpkg.com/@namitoyokota/ng-components@latest/package.json
+                  static-checking: localIsNew
 
             - name: Version Update Detected
               if: steps.check.outputs.changed == 'true'
