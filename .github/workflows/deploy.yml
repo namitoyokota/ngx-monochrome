@@ -12,6 +12,8 @@ jobs:
               with:
                   node-version: '16.x'
                   registry-url: 'https://registry.npmjs.org'
+            - run: rm yarn.lock
+            - run: yarn install
             - run: yarn build:lib
             - run: npm publish /dist/ny-components
               env:
