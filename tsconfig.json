@@ -1,6 +1,5 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-    "compileOnSave": false,
+    "compileOnSave": true,
     "compilerOptions": {
         "baseUrl": "./",
         "outDir": "./dist/out-tsc",
@@ -16,7 +15,7 @@
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "paths": {
-            "@namitoyokota/components": ["dist/ny-components"]
+            "@namitoyokota/ng-components": ["dist/ng-components"]
         },
         "importHelpers": true,
         "target": "ES2022",

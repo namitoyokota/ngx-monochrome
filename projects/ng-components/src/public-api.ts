@@ -1,7 +1,8 @@
 /*
- * Public API Surface of ny-components
+ * Public API Surface of ng-components
  */
 
+export * from './lib/abstractions/fit-type';
 export * from './lib/ny-hyperlink/ny-hyperlink.component';
 export * from './lib/ny-hyperlink/ny-hyperlink.module';
 export * from './lib/ny-icon/ny-icon.component';

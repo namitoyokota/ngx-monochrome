@@ -1,13 +1,18 @@
 :host {
     height: 100%;
-    width: auto;
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-img {
+.height {
     height: 100%;
     width: auto;
+}
+
+.width {
+    height: auto;
+    width: 100%;
 }

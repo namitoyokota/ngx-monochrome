@@ -1,13 +1,13 @@
 {
-    "name": "ng-components",
+    "name": "components",
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve --open",
+        "start": "ng serve",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
-        "build:lib": "ng build ny-components",
-        "watch:lib": "ng build ny-components --watch --configuration development",
+        "build:lib": "ng build ng-components",
+        "watch:lib": "ng build ng-components --watch --configuration development",
         "test": "ng test"
     },
     "private": true,

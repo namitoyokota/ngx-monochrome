@@ -2,4 +2,4 @@
 <div [hidden]="loaded">Loading...</div>
 
 <!-- Display Image -->
-<img [hidden]="!loaded" [src]="src" (load)="loaded = true" />
+<img [hidden]="!loaded" [class]="fit" [src]="src" (load)="loaded = true" />

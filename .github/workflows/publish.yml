@@ -11,7 +11,7 @@ jobs:
               with:
                   node-version: '16.x'
                   registry-url: 'https://registry.npmjs.org'
-            - run: cd ./projects/ny-components && npm version patch
+            - run: cd ./projects/ng-components && npm version patch
             - run: rm yarn.lock
             - run: yarn install
             - run: yarn build:lib
