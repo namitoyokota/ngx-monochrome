@@ -17,8 +17,7 @@ jobs:
             - name: Version Update Detected
               if: steps.check.outputs.changed == 'true'
               run: 'echo "Version change found! New version: ${{ steps.check.outputs.version }} (${{ steps.check.outputs.type }})"'
-            - run: cd ./projects/ng-components && npm version patch
-            - name: Remove yarn.lock File
+            - name: Remove Dependencies
               if: steps.check.outputs.changed == 'true'
               run: rm yarn.lock
             - name: Install Packages
