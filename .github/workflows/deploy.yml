@@ -6,7 +6,6 @@ on:
             - completed
 jobs:
     build:
-        name: Build and Test
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
@@ -37,6 +36,6 @@ jobs:
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@releases/v3
               with:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
                   BRANCH: gh-pages
                   FOLDER: deploy_dist/components
