@@ -7,7 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            # Setup .npmrc file to publish to npm
             - uses: actions/setup-node@v3
               with:
                   node-version: '16.x'
@@ -15,6 +14,6 @@ jobs:
             - run: rm yarn.lock
             - run: yarn install
             - run: yarn build:lib
-            - run: npm publish ./dist/ny-components
+            - run: npm publish ./dist/ng-components
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
