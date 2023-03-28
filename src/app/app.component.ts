@@ -7,5 +7,5 @@ import { FitType } from '@namitoyokota/ng-components';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    readonly fit = FitType.height;
+    readonly fit = FitType.width;
 }
