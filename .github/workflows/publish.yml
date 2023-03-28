@@ -11,10 +11,24 @@ jobs:
               with:
                   node-version: '16.x'
                   registry-url: 'https://registry.npmjs.org'
+            - name: Check Package Version Change
+              uses: EndBug/version-check@v1
+              id: check
+            - name: Version Update Detected
+              if: steps.check.outputs.changed == 'true'
+              run: 'echo "Version change found! New version: ${{ steps.check.outputs.version }} (${{ steps.check.outputs.type }})"'
             - run: cd ./projects/ng-components && npm version patch
-            - run: rm yarn.lock
-            - run: yarn install
-            - run: yarn build:lib
-            - run: npm publish ./dist/ng-components
+            - name: Remove yarn.lock File
+              if: steps.check.outputs.changed == 'true'
+              run: rm yarn.lock
+            - name: Install Packages
+              if: steps.check.outputs.changed == 'true'
+              run: yarn install
+            - name: Build Project
+              if: steps.check.outputs.changed == 'true'
+              run: yarn build:lib
+            - name: Publish to NPM
+              if: steps.check.outputs.changed == 'true'
+              run: npm publish ./dist/ng-components
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
