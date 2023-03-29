@@ -23,7 +23,14 @@
                         "polyfills": ["zone.js"],
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
-                        "assets": ["src/assets"],
+                        "assets": [
+                            "src/assets",
+                            {
+                                "glob": "**/*",
+                                "input": "projects/ng-components/assets",
+                                "output": "/assets"
+                            }
+                        ],
                         "styles": ["src/styles.scss"],
                         "scripts": []
                     },
@@ -78,7 +85,14 @@
                         "polyfills": ["zone.js", "zone.js/testing"],
                         "tsConfig": "tsconfig.spec.json",
                         "inlineStyleLanguage": "scss",
-                        "assets": ["src/assets"],
+                        "assets": [
+                            "src/assets",
+                            {
+                                "glob": "**/*",
+                                "input": "projects/ng-components/assets",
+                                "output": "/assets"
+                            }
+                        ],
                         "styles": ["src/styles.scss"],
                         "scripts": []
                     }

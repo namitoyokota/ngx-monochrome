@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { NyIconModule } from '../ny-icon/ny-icon.module';
+import { NySpinnerModule } from '../ny-spinner/ny-spinner.module';
 import { NyImageComponent } from './ny-image.component';
 
 @NgModule({
     declarations: [NyImageComponent],
-    imports: [NyIconModule],
+    imports: [NySpinnerModule],
     exports: [NyImageComponent],
 })
 export class NyImageModule {}

@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'ny-icon',
-    templateUrl: './ny-icon.component.html',
-    styleUrls: ['./ny-icon.component.scss'],
+    templateUrl: 'ny-icon.component.html',
+    styleUrls: ['ny-icon.component.scss'],
 })
 export class NyIconComponent {
     /** Name of the font awesome icon */
@@ -23,7 +23,4 @@ export class NyIconComponent {
 
     /** Dark mode */
     @Input() dark = false;
-
-    /** Spin icon */
-    @Input() spin = false;
 }

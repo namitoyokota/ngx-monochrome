@@ -3,8 +3,8 @@ import { FitType } from '../abstractions/fit-type';
 
 @Component({
     selector: 'ny-image',
-    templateUrl: './ny-image.component.html',
-    styleUrls: ['./ny-image.component.scss'],
+    templateUrl: 'ny-image.component.html',
+    styleUrls: ['ny-image.component.scss'],
 })
 export class NyImageComponent {
     /** Path of the image */

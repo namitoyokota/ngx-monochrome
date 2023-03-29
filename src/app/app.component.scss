@@ -6,7 +6,12 @@
 }
 
 .icon-list,
+.spinner-list,
 .hyperlink-list {
     display: flex;
     column-gap: 10px;
+}
+
+.dark {
+    background-color: #000;
 }

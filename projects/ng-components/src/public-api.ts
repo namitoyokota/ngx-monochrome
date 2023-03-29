@@ -9,3 +9,5 @@ export * from './lib/ny-image/ny-image.component';
 export * from './lib/ny-image/ny-image.module';
 export * from './lib/ny-link/ny-link.component';
 export * from './lib/ny-link/ny-link.module';
+export * from './lib/ny-spinner/ny-spinner.component';
+export * from './lib/ny-spinner/ny-spinner.module';

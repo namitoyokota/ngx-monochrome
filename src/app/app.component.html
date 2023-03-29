@@ -3,7 +3,6 @@
 <h2>Icon</h2>
 <div class="icon-list">
     <ny-icon [name]="'fa-home'"></ny-icon>
-    <ny-icon [name]="'fa-spinner'" [spin]="true"></ny-icon>
     <ny-icon [name]="'fa-magnifying-glass'" [clickable]="true" [dark]="true"></ny-icon>
     <ny-icon [name]="'fa-user'" [border]="true" [clickable]="true"></ny-icon>
     <ny-icon [name]="'fa-check'" [border]="true" [clickable]="true" [dark]="true"></ny-icon>
@@ -11,10 +10,16 @@
     <ny-icon [name]="'fa-star'" [border]="true" [clickable]="true" [dark]="true"></ny-icon>
 </div>
 
+<h2>Spinner</h2>
+<div class="spinner-list">
+    <ny-spinner></ny-spinner>
+    <ny-spinner class="dark" [dark]="true"></ny-spinner>
+</div>
+
 <h2>Link</h2>
 <div class="hyperlink-list">
     <ny-link [src]="'https://www.namito.wiki'" [text]="'Portfolio'"></ny-link>
-    <ny-link [src]="'https://www.github.com/namitoyokota'" [text]="'GitHub'" [dark]="true"></ny-link>
+    <ny-link class="dark" [src]="'https://www.github.com/namitoyokota'" [text]="'GitHub'" [dark]="true"></ny-link>
 </div>
 
 <h2>Image</h2>
