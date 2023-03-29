@@ -12,7 +12,9 @@
 .hyperlink-list {
     display: flex;
     column-gap: 10px;
+    row-gap: 10px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .message-list,
