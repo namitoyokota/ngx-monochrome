@@ -30,10 +30,18 @@
     <ny-link class="dark" [src]="'https://www.github.com/namitoyokota'" [text]="'GitHub'" [dark]="true"></ny-link>
 </div>
 
+<h2>Message</h2>
+<div class="message-list">
+    <ny-message [text]="'Light Message'" (clicked)="buttonClick()"></ny-message>
+    <ny-message [text]="'Light Message'" [icon]="'fa-circle-info'" (clicked)="buttonClick()"></ny-message>
+    <ny-message class="dark" [text]="'Dark Message'" [dark]="true" (clicked)="buttonClick()"></ny-message>
+    <ny-message class="dark" [text]="'Dark Message'" [icon]="'fa-circle-question'" [dark]="true" (clicked)="buttonClick()"></ny-message>
+</div>
+
 <h2>Divider</h2>
 <div class="divider-list">
     <ny-divider></ny-divider>
-    <ny-divider [dark]="false"></ny-divider>
+    <ny-divider class="dark" [dark]="false"></ny-divider>
 </div>
 
 <h2>Image</h2>
