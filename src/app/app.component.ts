@@ -8,4 +8,9 @@ import { FitType } from '@namitoyokota/ng-components';
 })
 export class AppComponent {
     readonly fit = FitType.width;
+
+    /** Triggered on button click event */
+    buttonClick(): void {
+        console.log('button clicked!');
+    }
 }

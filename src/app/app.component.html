@@ -10,6 +10,12 @@
     <ny-icon [name]="'fa-star'" [border]="true" [clickable]="true" [dark]="true"></ny-icon>
 </div>
 
+<h2>Button</h2>
+<div class="button-list">
+    <ny-button [text]="'Light Button'" (clicked)="buttonClick()"></ny-button>
+    <ny-button [text]="'Dark Button'" [dark]="true" (clicked)="buttonClick()"></ny-button>
+</div>
+
 <h2>Spinner</h2>
 <div class="spinner-list">
     <ny-spinner></ny-spinner>
