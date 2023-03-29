@@ -18,4 +18,9 @@ export class AppComponent {
     labelClosed(): void {
         console.log('label closed');
     }
+
+    /** Triggered on message close event */
+    messageClosed(): void {
+        console.log('message closed');
+    }
 }

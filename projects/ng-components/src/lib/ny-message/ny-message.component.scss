@@ -16,4 +16,14 @@
         background-color: #000;
         color: #fff;
     }
+
+    .close-icon {
+        margin-left: auto;
+        transition: 0.1s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(0.9);
+        }
+    }
 }

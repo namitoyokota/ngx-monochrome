@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
     selector: 'ny-message',
@@ -14,4 +14,15 @@ export class NyMessageComponent {
 
     /** Dark mode */
     @Input() dark = false;
+
+    /** Close label */
+    @Input() close = false;
+
+    /** Event fired when a closed is clicked */
+    @Output() closed = new EventEmitter<void>();
+
+    /** Triggered on close click */
+    closeMessage(): void {
+        this.closed.emit();
+    }
 }

@@ -8,4 +8,9 @@
     <ng-container *ngIf="text">
         <span>{{ text }}</span>
     </ng-container>
+
+    <!-- Close -->
+    <ng-container *ngIf="close">
+        <i class="close-icon fa-solid fa-xmark" (click)="closeMessage()"></i>
+    </ng-container>
 </div>

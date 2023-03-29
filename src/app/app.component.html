@@ -34,10 +34,17 @@
 
 <h2>Message</h2>
 <div class="message-list">
-    <ny-message [text]="'Light Message'" (clicked)="buttonClick()"></ny-message>
-    <ny-message [text]="'Light Message'" [icon]="'fa-circle-info'" (clicked)="buttonClick()"></ny-message>
-    <ny-message class="dark" [text]="'Dark Message'" [dark]="true" (clicked)="buttonClick()"></ny-message>
-    <ny-message class="dark" [text]="'Dark Message'" [icon]="'fa-circle-question'" [dark]="true" (clicked)="buttonClick()"></ny-message>
+    <ny-message [text]="'Light Message'"></ny-message>
+    <ny-message [text]="'Light Message'" [icon]="'fa-circle-info'" [close]="true" (closed)="messageClosed()"></ny-message>
+    <ny-message class="dark" [text]="'Dark Message'" [dark]="true"></ny-message>
+    <ny-message
+        class="dark"
+        [text]="'Dark Message'"
+        [icon]="'fa-circle-question'"
+        [dark]="true"
+        [close]="true"
+        (closed)="messageClosed()"
+    ></ny-message>
 </div>
 
 <h2>Divider</h2>
