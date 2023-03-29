@@ -5,7 +5,8 @@
     flex-direction: column;
 }
 
-.icon-list {
+.icon-list,
+.hyperlink-list {
     display: flex;
     column-gap: 10px;
 }

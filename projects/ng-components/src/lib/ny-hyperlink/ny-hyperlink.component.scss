@@ -1,0 +1,16 @@
+.link {
+    background-color: #fff;
+    color: #000;
+    transition: 0.1s ease-in-out;
+    text-decoration: none;
+
+    &.dark {
+        background-color: #000;
+        color: #fff;
+    }
+
+    &:hover {
+        color: #2ec4b6;
+        cursor: pointer;
+    }
+}
