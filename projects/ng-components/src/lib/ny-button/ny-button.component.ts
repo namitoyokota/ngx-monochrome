@@ -9,6 +9,9 @@ export class NyButtonComponent {
     /** Text to display inside of the button */
     @Input() text = '';
 
+    /** Icon to display inside button */
+    @Input() icon = '';
+
     /** Dark mode */
     @Input() dark = false;
 

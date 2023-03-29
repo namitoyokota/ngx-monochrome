@@ -1,1 +1,11 @@
-<div class="button" [ngClass]="dark ? 'dark' : 'light'" (click)="buttonClicked()">{{ text }}</div>
+<div class="button" [ngClass]="dark ? 'dark' : 'light'" (click)="buttonClicked()">
+    <!-- Icon -->
+    <ng-container *ngIf="icon">
+        <i class="fa-solid" [class]="icon"></i>
+    </ng-container>
+
+    <!-- Text -->
+    <ng-container *ngIf="text">
+        <span>{{ text }}</span>
+    </ng-container>
+</div>

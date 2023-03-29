@@ -13,7 +13,9 @@
 <h2>Button</h2>
 <div class="button-list">
     <ny-button [text]="'Light Button'" (clicked)="buttonClick()"></ny-button>
+    <ny-button [text]="'Light Button'" [icon]="'fa-star'" (clicked)="buttonClick()"></ny-button>
     <ny-button [text]="'Dark Button'" [dark]="true" (clicked)="buttonClick()"></ny-button>
+    <ny-button [text]="'Dark Button'" [icon]="'fa-check'" [dark]="true" (clicked)="buttonClick()"></ny-button>
 </div>
 
 <h2>Spinner</h2>
