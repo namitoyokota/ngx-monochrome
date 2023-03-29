@@ -13,4 +13,9 @@ export class AppComponent {
     buttonClick(): void {
         console.log('button clicked!');
     }
+
+    /** Triggered on label close event */
+    labelClosed(): void {
+        console.log('label closed');
+    }
 }

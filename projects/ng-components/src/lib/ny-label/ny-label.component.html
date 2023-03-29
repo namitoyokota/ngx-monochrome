@@ -1,0 +1,11 @@
+<div class="message" [ngClass]="dark ? 'dark' : 'light'">
+    <!-- Text -->
+    <ng-container *ngIf="text">
+        <span>{{ text }}</span>
+    </ng-container>
+
+    <!-- Close -->
+    <ng-container *ngIf="close">
+        <i class="close-icon fa-solid fa-xmark fa-sm" (click)="closeLabel()"></i>
+    </ng-container>
+</div>

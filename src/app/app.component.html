@@ -24,10 +24,12 @@
     <ny-spinner class="dark" [dark]="true"></ny-spinner>
 </div>
 
-<h2>Link</h2>
-<div class="hyperlink-list">
-    <ny-link [src]="'https://www.namito.wiki'" [text]="'Portfolio'"></ny-link>
-    <ny-link class="dark" [src]="'https://www.github.com/namitoyokota'" [text]="'GitHub'" [dark]="true"></ny-link>
+<h2>Labels</h2>
+<div class="label-list">
+    <ny-label [text]="'Light Button'"></ny-label>
+    <ny-label [text]="'Light Button'" [close]="true" (closed)="labelClosed()"></ny-label>
+    <ny-label class="dark" [text]="'Dark Button'" [dark]="true"></ny-label>
+    <ny-label class="dark" [text]="'Dark Button'" [close]="true" [dark]="true" (closed)="labelClosed()"></ny-label>
 </div>
 
 <h2>Message</h2>
@@ -44,5 +46,16 @@
     <ny-divider class="dark" [dark]="false"></ny-divider>
 </div>
 
+<h2>Link</h2>
+<div class="hyperlink-list">
+    <ny-link [src]="'https://www.namito.wiki'" [text]="'Portfolio'"></ny-link>
+    <ny-link class="dark" [src]="'https://www.github.com/namitoyokota'" [text]="'GitHub'" [dark]="true"></ny-link>
+</div>
+
 <h2>Image</h2>
-<ny-image [src]="'/assets/JAN_2110.jpg'" [fit]="fit"></ny-image>
+<ny-image
+    [src]="
+        'https://media-s3-us-east-1.ceros.com/venminder/images/2022/11/30/a96a440523cd04298cf450d3c0adc20f/venmonster-losty-scratching-his-head.png'
+    "
+    [fit]="fit"
+></ny-image>

@@ -16,7 +16,7 @@ export class NyButtonComponent {
     @Input() dark = false;
 
     /** Event fired when a button is clicked */
-    @Output() clicked = new EventEmitter<null>();
+    @Output() clicked = new EventEmitter<void>();
 
     /** Triggered on button click */
     buttonClicked(): void {

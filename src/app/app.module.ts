@@ -5,6 +5,7 @@ import {
     NyDividerModule,
     NyIconModule,
     NyImageModule,
+    NyLabelModule,
     NyLinkModule,
     NyMessageModule,
     NySpinnerModule,
@@ -14,7 +15,17 @@ import { AppComponent } from './app.component';
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, NyLinkModule, NyImageModule, NyIconModule, NySpinnerModule, NyButtonModule, NyDividerModule, NyMessageModule],
+    imports: [
+        BrowserModule,
+        NyLinkModule,
+        NyImageModule,
+        NyIconModule,
+        NySpinnerModule,
+        NyButtonModule,
+        NyDividerModule,
+        NyMessageModule,
+        NyLabelModule,
+    ],
     providers: [],
     bootstrap: [AppComponent],
 })
