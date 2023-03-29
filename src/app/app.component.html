@@ -1,7 +1,15 @@
 <h1>@namitoyokota/ng-components</h1>
 
 <h2>Icon</h2>
-<ny-icon [name]="'fa-face-smile'" [type]="'fa-solid'" [clickable]="true"></ny-icon>
+<div class="icon-list">
+    <ny-icon [name]="'fa-home'"></ny-icon>
+    <ny-icon [name]="'fa-spinner'" [spin]="true"></ny-icon>
+    <ny-icon [name]="'fa-magnifying-glass'" [clickable]="true" [dark]="true"></ny-icon>
+    <ny-icon [name]="'fa-user'" [border]="true" [clickable]="true"></ny-icon>
+    <ny-icon [name]="'fa-check'" [border]="true" [clickable]="true" [dark]="true"></ny-icon>
+    <ny-icon [name]="'fa-location-dot'" [border]="true" [clickable]="true"></ny-icon>
+    <ny-icon [name]="'fa-star'" [border]="true" [clickable]="true" [dark]="true"></ny-icon>
+</div>
 
 <h2>Image</h2>
 <ny-image [src]="'/assets/JAN_2110.jpg'" [fit]="fit"></ny-image>

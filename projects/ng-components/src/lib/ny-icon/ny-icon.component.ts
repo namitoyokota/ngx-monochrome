@@ -12,6 +12,18 @@ export class NyIconComponent {
     /** Type of the icon */
     @Input() type = 'fa-solid';
 
+    /** Size of the icon */
+    @Input() size = '';
+
+    /** Whether to display border */
+    @Input() border = false;
+
     /** Whether icon can be clicked */
     @Input() clickable = false;
+
+    /** Dark mode */
+    @Input() dark = false;
+
+    /** Spin icon */
+    @Input() spin = false;
 }

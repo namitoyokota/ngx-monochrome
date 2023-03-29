@@ -1,5 +1,5 @@
 <!-- Loading Indicator -->
-<div [hidden]="loaded">Loading...</div>
+<div [hidden]="loaded"><ny-icon [name]="'fa-spinner'" [spin]="true"></ny-icon></div>
 
 <!-- Display Image -->
 <img [hidden]="!loaded" [class]="fit" [src]="src" (load)="loaded = true" />
