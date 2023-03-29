@@ -53,9 +53,18 @@
 </div>
 
 <h2>Image</h2>
-<ny-image
-    [src]="
-        'https://media-s3-us-east-1.ceros.com/venminder/images/2022/11/30/a96a440523cd04298cf450d3c0adc20f/venmonster-losty-scratching-his-head.png'
-    "
-    [fit]="fit"
-></ny-image>
+<div class="image-list">
+    <ny-image
+        class="image-height"
+        [src]="
+            'https://media-s3-us-east-1.ceros.com/venminder/images/2022/11/30/a96a440523cd04298cf450d3c0adc20f/venmonster-losty-scratching-his-head.png'
+        "
+    ></ny-image>
+    <ny-image
+        class="image-width"
+        [src]="
+            'https://media-s3-us-east-1.ceros.com/venminder/images/2022/11/30/a96a440523cd04298cf450d3c0adc20f/venmonster-losty-scratching-his-head.png'
+        "
+        [fit]="fit"
+    ></ny-image>
+</div>

@@ -16,10 +16,19 @@
 }
 
 .message-list,
-.divider-list {
+.divider-list,
+.image-list {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+}
+
+.image-height {
+    height: 150px;
+}
+
+.image-width {
+    width: 100px;
 }
 
 .dark {
