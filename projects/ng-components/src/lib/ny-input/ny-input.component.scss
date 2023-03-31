@@ -1,0 +1,35 @@
+:host {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+.input {
+    font-size: 16px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #c0c0c0;
+
+    &:focus {
+        outline: none;
+        border-color: #000;
+    }
+}
+
+.clear-icon {
+    position: absolute;
+    top: 14.5px;
+    right: 15px;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+}
+
+.error {
+    color: #ff0000;
+}

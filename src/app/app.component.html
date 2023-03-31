@@ -18,6 +18,13 @@
     <ny-button [text]="'Dark Button'" [icon]="'fa-check'" [dark]="true" (clicked)="buttonClick()"></ny-button>
 </div>
 
+<h2>Inputs</h2>
+<div class="input-list">
+    <ny-input (changed)="textChanged($event)"></ny-input>
+    <ny-input [placeholder]="'Search'" [clear]="true" (searched)="search($event)"></ny-input>
+    <ny-input [label]="'Label'" [error]="'Error Message'" (changed)="textChanged($event)"></ny-input>
+</div>
+
 <h2>Spinner</h2>
 <div class="spinner-list">
     <ny-spinner></ny-spinner>

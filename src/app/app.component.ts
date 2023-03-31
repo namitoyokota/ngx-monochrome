@@ -23,4 +23,14 @@ export class AppComponent {
     messageClosed(): void {
         console.log('message closed');
     }
+
+    /** Triggered on search input enter */
+    search(text: string): void {
+        console.log('search', text);
+    }
+
+    /** Triggered on keyboard input */
+    textChanged(text: string): void {
+        console.log('text changed', text);
+    }
 }

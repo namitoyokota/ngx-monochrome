@@ -1,0 +1,11 @@
+<!-- Label -->
+<span *ngIf="label">{{ label }}</span>
+
+<!-- Input -->
+<input class="input" type="text" [placeholder]="placeholder" [(ngModel)]="text" (keyup)="textChanged()" (keyup.enter)="search()" />
+
+<!-- Clear -->
+<i *ngIf="!label && clear" class="clear-icon fa-solid fa-xmark" (click)="clearText()"></i>
+
+<!-- Error -->
+<span *ngIf="error" class="error">{{ error }}</span>
