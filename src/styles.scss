@@ -6,7 +6,7 @@ html {
     font-feature-settings: normal;
 
     background-color: #fff;
-    color: #000;
+    color: #343a40;
 }
 
 body {
@@ -17,11 +17,11 @@ body {
 
 ::selection {
     background-color: #fcf55f;
+    color: #343a40;
 }
 
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
