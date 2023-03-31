@@ -12,16 +12,31 @@
     border-radius: 8px;
     border: 1px solid #c0c0c0;
 
+    &.single-padding {
+        padding-right: 35px;
+    }
+
+    &.double-padding {
+        padding-right: 60px;
+    }
+
     &:focus {
         outline: none;
         border-color: #000;
     }
 }
 
-.clear-icon {
+.icon-pane {
     position: absolute;
     top: 14.5px;
     right: 15px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.clear-icon {
     transition: 0.1s ease-in-out;
 
     &:hover {

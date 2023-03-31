@@ -12,11 +12,8 @@ export class NyInputComponent {
     /** Placeholder to display in input */
     @Input() placeholder = '';
 
-    /** Label for the input */
-    @Input() label = '';
-
-    /** Error to display */
-    @Input() error = '';
+    /** Icon to display */
+    @Input() icon = '';
 
     /** Whether to display clear text button */
     @Input() clear = false;

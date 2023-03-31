@@ -21,9 +21,8 @@
 
 <h2>Inputs</h2>
 <div class="input-list">
-    <ny-input (changed)="textChanged($event)"></ny-input>
-    <ny-input [placeholder]="'Search'" [clear]="true" (searched)="search($event)"></ny-input>
-    <ny-input [label]="'Label'" [error]="'Error Message'" (changed)="textChanged($event)"></ny-input>
+    <ny-input [placeholder]="'John Doe'" [clear]="true" (changed)="textChanged($event)"></ny-input>
+    <ny-input [placeholder]="'Search'" [icon]="'fa-magnifying-glass'" [clear]="true" (searched)="search($event)"></ny-input>
 </div>
 
 <h2>Spinner</h2>
