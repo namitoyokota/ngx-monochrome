@@ -8,32 +8,10 @@ import { FitType, NyColor, NySize } from '@namitoyokota/ng-components';
 })
 export class AppComponent {
     readonly fit = FitType.width;
+    readonly NyColor: typeof NyColor = NyColor;
+    readonly NySize: typeof NySize = NySize;
 
-    NyColor: typeof NyColor = NyColor;
-    NySize: typeof NySize = NySize;
-
-    /** Triggered on button click event */
-    buttonClick(): void {
-        console.log('button clicked!');
-    }
-
-    /** Triggered on label close event */
-    labelClosed(): void {
-        console.log('label closed');
-    }
-
-    /** Triggered on message close event */
-    messageClosed(): void {
-        console.log('message closed');
-    }
-
-    /** Triggered on search input enter */
-    search(text: string): void {
-        console.log('search', text);
-    }
-
-    /** Triggered on keyboard input */
-    textChanged(text: string): void {
-        console.log('text changed', text);
+    echo(text?: string, value?: string): void {
+        console.log(text, value ? ': ' + value : '');
     }
 }

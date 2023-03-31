@@ -1,6 +1,8 @@
 <img
+    src="assets/logo.png"
     [class.small]="size === NySize.small"
     [class.medium]="size === NySize.medium"
     [class.large]="size === NySize.large"
-    src="assets/logo.png"
+    [class.clickable]="clickable"
+    (click)="logoClicked()"
 />

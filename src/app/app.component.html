@@ -12,17 +12,17 @@
 
 <h2>Button</h2>
 <div class="button-list">
-    <ny-button class="dark" [text]="'White Button'" (clicked)="buttonClick()"></ny-button>
-    <ny-button [text]="'Outline Button'" [icon]="'fa-star'" [outline]="true" (clicked)="buttonClick()"></ny-button>
-    <ny-button [text]="'Red Button'" [color]="NyColor.red" (clicked)="buttonClick()"></ny-button>
-    <ny-button [text]="'Blue Button'" [icon]="'fa-check'" [color]="NyColor.blue" (clicked)="buttonClick()"></ny-button>
-    <ny-button [text]="'Black Button'" [color]="NyColor.black" (clicked)="buttonClick()"></ny-button>
+    <ny-button class="dark" [text]="'White Button'" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button [text]="'Outline Button'" [icon]="'fa-star'" [outline]="true" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button [text]="'Red Button'" [color]="NyColor.red" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button [text]="'Blue Button'" [icon]="'fa-check'" [color]="NyColor.blue" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button [text]="'Black Button'" [color]="NyColor.black" (clicked)="echo('button clicked')"></ny-button>
 </div>
 
 <h2>Inputs</h2>
 <div class="input-list">
-    <ny-input [placeholder]="'John Doe'" [clear]="true" (changed)="textChanged($event)"></ny-input>
-    <ny-input [placeholder]="'Search'" [icon]="'fa-magnifying-glass'" [clear]="true" (searched)="search($event)"></ny-input>
+    <ny-input [placeholder]="'John Doe'" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
+    <ny-input [placeholder]="'Search'" [icon]="'fa-magnifying-glass'" [clear]="true" (searched)="echo('search', $event)"></ny-input>
 </div>
 
 <h2>Spinner</h2>
@@ -34,15 +34,15 @@
 <h2>Labels</h2>
 <div class="label-list">
     <ny-label class="dark" [text]="'Light Label'"></ny-label>
-    <ny-label class="dark" [text]="'Light Label'" [close]="true" (closed)="labelClosed()"></ny-label>
+    <ny-label class="dark" [text]="'Light Label'" [close]="true" (closed)="echo('label closed')"></ny-label>
     <ny-label [text]="'Dark Label'" [dark]="true"></ny-label>
-    <ny-label [text]="'Dark Label'" [close]="true" [dark]="true" (closed)="labelClosed()"></ny-label>
+    <ny-label [text]="'Dark Label'" [close]="true" [dark]="true" (closed)="echo('label closed')"></ny-label>
 </div>
 
 <h2>Message</h2>
 <div class="message-list">
     <ny-message [text]="'Light Message'"></ny-message>
-    <ny-message [text]="'Light Message'" [icon]="'fa-circle-info'" [close]="true" (closed)="messageClosed()"></ny-message>
+    <ny-message [text]="'Light Message'" [icon]="'fa-circle-info'" [close]="true" (closed)="echo('message closed')"></ny-message>
     <ny-message class="dark" [text]="'Dark Message'" [dark]="true"></ny-message>
     <ny-message
         class="dark"
@@ -50,7 +50,7 @@
         [icon]="'fa-circle-question'"
         [dark]="true"
         [close]="true"
-        (closed)="messageClosed()"
+        (closed)="echo('message closed')"
     ></ny-message>
 </div>
 
@@ -71,6 +71,7 @@
     <ny-logo [size]="NySize.large"></ny-logo>
     <ny-logo [size]="NySize.medium"></ny-logo>
     <ny-logo [size]="NySize.small"></ny-logo>
+    <ny-logo [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
 </div>
 
 <h2>Image</h2>

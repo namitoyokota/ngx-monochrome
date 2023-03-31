@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NySize } from '../abstractions/ny-size';
 
 @Component({
@@ -10,6 +10,19 @@ export class NyLogoComponent {
     /** Size of the icon */
     @Input() size = NySize.medium;
 
+    /** Whether icon can be clicked */
+    @Input() clickable = false;
+
     /** Expose NySize to HTML */
     NySize: typeof NySize = NySize;
+
+    /** Event fired when logo is clicked */
+    @Output() clicked = new EventEmitter<void>();
+
+    /** Triggered on logo click */
+    logoClicked(): void {
+        if (this.clickable) {
+            this.clicked.emit();
+        }
+    }
 }
