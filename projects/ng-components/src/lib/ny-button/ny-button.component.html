@@ -1,4 +1,4 @@
-<div class="button" [ngClass]="dark ? 'dark' : 'light'" (click)="buttonClicked()">
+<div class="button" [class]="color" [class.outline]="outline" (click)="buttonClicked()">
     <!-- Icon -->
     <ng-container *ngIf="icon">
         <i class="fa-solid" [class]="icon"></i>

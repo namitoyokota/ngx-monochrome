@@ -3,6 +3,7 @@
  */
 
 export * from './lib/abstractions/fit-type';
+export * from './lib/abstractions/ny-color';
 export * from './lib/ny-button/ny-button.component';
 export * from './lib/ny-button/ny-button.module';
 export * from './lib/ny-divider/ny-divider.component';

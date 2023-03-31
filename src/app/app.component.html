@@ -12,10 +12,11 @@
 
 <h2>Button</h2>
 <div class="button-list">
-    <ny-button [text]="'Light Button'" (clicked)="buttonClick()"></ny-button>
-    <ny-button [text]="'Light Button'" [icon]="'fa-star'" (clicked)="buttonClick()"></ny-button>
-    <ny-button [text]="'Dark Button'" [dark]="true" (clicked)="buttonClick()"></ny-button>
-    <ny-button [text]="'Dark Button'" [icon]="'fa-check'" [dark]="true" (clicked)="buttonClick()"></ny-button>
+    <ny-button [text]="'White Button'" (clicked)="buttonClick()"></ny-button>
+    <ny-button [text]="'Outline Button'" [icon]="'fa-star'" [outline]="true" (clicked)="buttonClick()"></ny-button>
+    <ny-button [text]="'Red Button'" [color]="NyColor.red" (clicked)="buttonClick()"></ny-button>
+    <ny-button [text]="'Blue Button'" [icon]="'fa-check'" [color]="NyColor.blue" (clicked)="buttonClick()"></ny-button>
+    <ny-button [text]="'Black Button'" [color]="NyColor.black" (clicked)="buttonClick()"></ny-button>
 </div>
 
 <h2>Inputs</h2>

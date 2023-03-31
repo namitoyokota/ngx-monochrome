@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FitType } from '@namitoyokota/ng-components';
+import { FitType, NyColor } from '@namitoyokota/ng-components';
 
 @Component({
     selector: 'app-root',
@@ -8,6 +8,8 @@ import { FitType } from '@namitoyokota/ng-components';
 })
 export class AppComponent {
     readonly fit = FitType.width;
+
+    NyColor: typeof NyColor = NyColor;
 
     /** Triggered on button click event */
     buttonClick(): void {

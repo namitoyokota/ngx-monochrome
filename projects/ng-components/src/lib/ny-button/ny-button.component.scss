@@ -6,15 +6,30 @@
     border-radius: 5px;
     padding: 5px 10px;
 
-    &.light {
-        border: 1px solid #000;
+    &.white {
         background-color: #fff;
         color: #000;
+
+        &.outline {
+            border: 1px solid #343a40;
+        }
     }
 
-    &.dark {
-        border: 1px solid #000;
-        background-color: #000;
+    &.red {
+        border: 1px solid #dc3545;
+        background-color: #dc3545;
+        color: #fff;
+    }
+
+    &.blue {
+        border: 1px solid #007bff;
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    &.black {
+        border: 1px solid #343a40;
+        background-color: #343a40;
         color: #fff;
     }
 
