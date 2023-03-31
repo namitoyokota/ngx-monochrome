@@ -4,6 +4,7 @@
 
 export * from './lib/abstractions/fit-type';
 export * from './lib/abstractions/ny-color';
+export * from './lib/abstractions/ny-size';
 export * from './lib/ny-button/ny-button.component';
 export * from './lib/ny-button/ny-button.module';
 export * from './lib/ny-divider/ny-divider.component';
@@ -18,6 +19,8 @@ export * from './lib/ny-label/ny-label.component';
 export * from './lib/ny-label/ny-label.module';
 export * from './lib/ny-link/ny-link.component';
 export * from './lib/ny-link/ny-link.module';
+export * from './lib/ny-logo/ny-logo.component';
+export * from './lib/ny-logo/ny-logo.module';
 export * from './lib/ny-message/ny-message.component';
 export * from './lib/ny-message/ny-message.module';
 export * from './lib/ny-spinner/ny-spinner.component';
