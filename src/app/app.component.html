@@ -2,7 +2,7 @@
 
 <h2>Icon</h2>
 <div class="icon-list">
-    <ny-icon [name]="'fa-home'"></ny-icon>
+    <ny-icon class="dark" [name]="'fa-home'"></ny-icon>
     <ny-icon [name]="'fa-magnifying-glass'" [clickable]="true" [dark]="true"></ny-icon>
     <ny-icon [name]="'fa-user'" [border]="true" [clickable]="true"></ny-icon>
     <ny-icon [name]="'fa-check'" [border]="true" [clickable]="true" [dark]="true"></ny-icon>
@@ -12,7 +12,7 @@
 
 <h2>Button</h2>
 <div class="button-list">
-    <ny-button [text]="'White Button'" (clicked)="buttonClick()"></ny-button>
+    <ny-button class="dark" [text]="'White Button'" (clicked)="buttonClick()"></ny-button>
     <ny-button [text]="'Outline Button'" [icon]="'fa-star'" [outline]="true" (clicked)="buttonClick()"></ny-button>
     <ny-button [text]="'Red Button'" [color]="NyColor.red" (clicked)="buttonClick()"></ny-button>
     <ny-button [text]="'Blue Button'" [icon]="'fa-check'" [color]="NyColor.blue" (clicked)="buttonClick()"></ny-button>
@@ -33,10 +33,10 @@
 
 <h2>Labels</h2>
 <div class="label-list">
-    <ny-label [text]="'Light Label'"></ny-label>
-    <ny-label [text]="'Light Label'" [close]="true" (closed)="labelClosed()"></ny-label>
-    <ny-label class="dark" [text]="'Dark Label'" [dark]="true"></ny-label>
-    <ny-label class="dark" [text]="'Dark Label'" [close]="true" [dark]="true" (closed)="labelClosed()"></ny-label>
+    <ny-label class="dark" [text]="'Light Label'"></ny-label>
+    <ny-label class="dark" [text]="'Light Label'" [close]="true" (closed)="labelClosed()"></ny-label>
+    <ny-label [text]="'Dark Label'" [dark]="true"></ny-label>
+    <ny-label [text]="'Dark Label'" [close]="true" [dark]="true" (closed)="labelClosed()"></ny-label>
 </div>
 
 <h2>Message</h2>
