@@ -1,11 +1,13 @@
+@import "../styles/variables.scss";
+
 hr {
     border-radius: 3px;
 }
 
 .dark {
-    border: 1px solid #000;
+    border: 1px solid $black;
 }
 
 .light {
-    border: 1px solid #e5e5e5;
+    border: 1px solid $gray;
 }

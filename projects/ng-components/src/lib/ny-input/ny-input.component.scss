@@ -1,3 +1,5 @@
+@import "../styles/variables.scss";
+
 :host {
     position: relative;
     display: flex;
@@ -10,7 +12,7 @@
     font-size: 16px;
     padding: 12px 15px;
     border-radius: 8px;
-    border: 1px solid #c0c0c0;
+    border: 1px solid $gray;
 
     &.single-padding {
         padding-right: 35px;
@@ -22,7 +24,7 @@
 
     &:focus {
         outline: none;
-        border-color: #000;
+        border-color: $black;
     }
 }
 
@@ -45,5 +47,5 @@
 }
 
 .error {
-    color: #dc3545;
+    color: $gray;
 }
