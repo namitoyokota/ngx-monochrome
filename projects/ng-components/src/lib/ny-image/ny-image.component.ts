@@ -10,6 +10,9 @@ export class NyImageComponent {
     /** Path of the image */
     @Input() src: string = '';
 
+    /** Whether to display loading */
+    @Input() showLoading = false;
+
     /** Direction to fit image */
     @Input() fit: NyFitType = NyFitType.height;
 

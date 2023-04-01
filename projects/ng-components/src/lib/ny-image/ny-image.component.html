@@ -1,5 +1,5 @@
 <!-- Loading Indicator -->
-<ny-spinner [hidden]="loaded"></ny-spinner>
+<ny-spinner [hidden]="showLoading || loaded"></ny-spinner>
 
 <!-- Display Image -->
 <img [hidden]="!loaded" [class]="fit" [src]="src" (load)="loaded = true" />
