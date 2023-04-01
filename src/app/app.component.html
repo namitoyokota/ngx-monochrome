@@ -23,17 +23,17 @@
 
 <h2>Button</h2>
 <div class="button-list">
-    <ny-button class="dark" [text]="'White Button'" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button [text]="'Outline Button'" [iconConfig]="iconConfig1" [outline]="true" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button [text]="'Red Button'" [color]="NyColor.red" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button [text]="'Blue Button'" [iconConfig]="iconConfig10" [color]="NyColor.blue" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button [text]="'Black Button'" [color]="NyColor.black" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button class="dark" text="White Button" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button text="Outline Button" [iconConfig]="iconConfig1" [outline]="true" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button text="Red Button" [color]="NyColor.red" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button text="Blue Button" [iconConfig]="iconConfig10" [color]="NyColor.blue" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button text="Black Button" [color]="NyColor.black" (clicked)="echo('button clicked')"></ny-button>
 </div>
 
 <h2>Inputs</h2>
 <div class="input-list">
-    <ny-input [placeholder]="'John Doe'" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
-    <ny-input [placeholder]="'Search'" [iconConfig]="iconConfig11" [clear]="true" (searched)="echo('search', $event)"></ny-input>
+    <ny-input placeholder="John Doe" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
+    <ny-input placeholder="Search" [iconConfig]="iconConfig11" [clear]="true" (searched)="echo('search', $event)"></ny-input>
 </div>
 
 <h2>Spinner</h2>
@@ -44,20 +44,20 @@
 
 <h2>Labels</h2>
 <div class="label-list">
-    <ny-label class="dark" [text]="'Light Label'"></ny-label>
-    <ny-label class="dark" [text]="'Light Label'" [close]="true" (closed)="echo('label closed')"></ny-label>
-    <ny-label [text]="'Dark Label'" [dark]="true"></ny-label>
-    <ny-label [text]="'Dark Label'" [close]="true" [dark]="true" (closed)="echo('label closed')"></ny-label>
+    <ny-label class="dark" text="Light Label"></ny-label>
+    <ny-label class="dark" text="Light Label" [close]="true" (closed)="echo('label closed')"></ny-label>
+    <ny-label text="Dark Label" [dark]="true"></ny-label>
+    <ny-label text="Dark Label" [close]="true" [dark]="true" (closed)="echo('label closed')"></ny-label>
 </div>
 
 <h2>Message</h2>
 <div class="message-list">
-    <ny-message [text]="'Light Message'"></ny-message>
-    <ny-message [text]="'Light Message'" [iconConfig]="infoIconConfig" [close]="true" (closed)="echo('message closed')"></ny-message>
-    <ny-message class="dark" [text]="'Dark Message'" [dark]="true"></ny-message>
+    <ny-message text="Light Message"></ny-message>
+    <ny-message text="Light Message" [iconConfig]="infoIconConfig" [close]="true" (closed)="echo('message closed')"></ny-message>
+    <ny-message class="dark" text="Dark Message" [dark]="true"></ny-message>
     <ny-message
         class="dark"
-        [text]="'Dark Message'"
+        text="Dark Message"
         [iconConfig]="questionIconConfig"
         [dark]="true"
         [close]="true"
@@ -73,8 +73,8 @@
 
 <h2>Link</h2>
 <div class="hyperlink-list">
-    <ny-link [src]="'https://www.namito.wiki'" [text]="'Portfolio'"></ny-link>
-    <ny-link class="dark" [src]="'https://www.github.com/namitoyokota'" [text]="'GitHub'" [dark]="true"></ny-link>
+    <ny-link src="https://www.namito.wiki" text="Portfolio"></ny-link>
+    <ny-link class="dark" src="https://www.github.com/namitoyokota" text="GitHub" [dark]="true"></ny-link>
 </div>
 
 <h2>Logo</h2>
@@ -89,8 +89,8 @@
 <div class="image-list">
     <ny-image
         class="image-width"
-        [src]="
-            'https://images.unsplash.com/photo-1674681812690-aad23c069952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'
+        src="
+            https://images.unsplash.com/photo-1674681812690-aad23c069952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
         "
         [showLoading]="true"
         [fit]="fit"
