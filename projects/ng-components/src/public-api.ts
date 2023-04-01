@@ -2,8 +2,11 @@
  * Public API Surface of ng-components
  */
 
-export * from './lib/abstractions/fit-type';
 export * from './lib/abstractions/ny-color';
+export * from './lib/abstractions/ny-fit-type';
+export * from './lib/abstractions/ny-icon-config';
+export * from './lib/abstractions/ny-icon-size';
+export * from './lib/abstractions/ny-icon-type';
 export * from './lib/abstractions/ny-size';
 export * from './lib/ny-button/ny-button.component';
 export * from './lib/ny-button/ny-button.module';

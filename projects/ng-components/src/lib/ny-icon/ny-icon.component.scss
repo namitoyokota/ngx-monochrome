@@ -1,31 +1,23 @@
 @import "../styles/variables.scss";
 
 .icon {
-    height: 35px;
-    width: 35px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: $white;
-    color: $black;
-    border-radius: 5px;
-    transition: 0.1s ease-in-out;
-
-    &.border {
-        border: 1px solid $black;
-    }
-
-    &.clickable {
-        &:hover {
-            cursor: pointer;
-            transform: scale(0.95);
-        }
-    }
-
-    &.dark {
-        background-color: $black;
+    &.white {
         color: $white;
+    }
+
+    &.red {
+        color: $red;
+    }
+
+    &.blue {
+        color: $blue;
+    }
+
+    &.yellow {
+        color: $yellow;
+    }
+
+    &.black {
+        color: $black;
     }
 }

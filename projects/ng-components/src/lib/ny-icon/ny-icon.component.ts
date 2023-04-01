@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { NyIconConfig } from '../abstractions/ny-icon-config';
 
 @Component({
     selector: 'ny-icon',
@@ -6,21 +7,6 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['ny-icon.component.scss'],
 })
 export class NyIconComponent {
-    /** Name of the font awesome icon */
-    @Input() name = 'fa-face-smile';
-
-    /** Type of the icon */
-    @Input() type = 'fa-solid';
-
-    /** Size of the icon */
-    @Input() size = '';
-
-    /** Whether to display border */
-    @Input() border = false;
-
-    /** Whether icon can be clicked */
-    @Input() clickable = false;
-
-    /** Dark mode */
-    @Input() dark = false;
+    /** Configurations for the icon */
+    @Input() config: NyIconConfig = new NyIconConfig();
 }

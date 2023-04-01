@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FitType } from '../abstractions/fit-type';
+import { NyFitType } from '../abstractions/ny-fit-type';
 
 @Component({
     selector: 'ny-image',
@@ -11,7 +11,7 @@ export class NyImageComponent {
     @Input() src: string = '';
 
     /** Direction to fit image */
-    @Input() fit: FitType = FitType.height;
+    @Input() fit: NyFitType = NyFitType.height;
 
     /** Indicates whether image has loaded */
     loaded = false;

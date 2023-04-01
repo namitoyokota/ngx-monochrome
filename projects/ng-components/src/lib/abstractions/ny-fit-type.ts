@@ -1,4 +1,4 @@
-export enum FitType {
+export enum NyFitType {
     height = 'height',
     width = 'width',
 }
