@@ -7,6 +7,7 @@ export * from './lib/abstractions/ny-fit-type';
 export * from './lib/abstractions/ny-icon-config';
 export * from './lib/abstractions/ny-icon-size';
 export * from './lib/abstractions/ny-icon-type';
+export * from './lib/abstractions/ny-logo-color';
 export * from './lib/abstractions/ny-menu-option';
 export * from './lib/abstractions/ny-size';
 export * from './lib/ny-button/ny-button.component';

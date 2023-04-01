@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NyColor, NyFitType, NyIconConfig, NyIconSize, NyIconType, NyMenuOption, NySize } from '@namitoyokota/ng-components';
+import { NyColor, NyFitType, NyIconConfig, NyIconSize, NyIconType, NyLogoColor, NyMenuOption, NySize } from '@namitoyokota/ng-components';
 
 @Component({
     selector: 'app-root',
@@ -37,6 +37,7 @@ export class AppComponent {
     readonly fit = NyFitType.width;
     readonly NyColor: typeof NyColor = NyColor;
     readonly NySize: typeof NySize = NySize;
+    readonly NyLogoColor: typeof NyLogoColor = NyLogoColor;
 
     echo(text?: string, value?: string): void {
         console.log(text, value ? ': ' + value : '');

@@ -7,13 +7,15 @@
     <ny-icon [config]="iconConfig3"></ny-icon>
     <ny-icon [config]="iconConfig4"></ny-icon>
     <ny-icon class="dark" [config]="iconConfig5"></ny-icon>
-
+</div>
+<div class="icon-list">
     <ny-icon [config]="iconConfig6"></ny-icon>
     <ny-icon [config]="iconConfig7"></ny-icon>
     <ny-icon [config]="iconConfig8"></ny-icon>
     <ny-icon [config]="iconConfig9"></ny-icon>
     <ny-icon class="dark" [config]="iconConfig10"></ny-icon>
-
+</div>
+<div class="icon-list">
     <ny-icon [config]="iconConfig11"></ny-icon>
     <ny-icon [config]="iconConfig12"></ny-icon>
     <ny-icon [config]="iconConfig13"></ny-icon>
@@ -83,10 +85,31 @@
 
 <h2>Logos</h2>
 <div class="logo-list">
-    <ny-logo [size]="NySize.large"></ny-logo>
-    <ny-logo [size]="NySize.medium"></ny-logo>
     <ny-logo [size]="NySize.small"></ny-logo>
-    <ny-logo [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
+    <ny-logo [size]="NySize.small" [color]="NyLogoColor.blue"></ny-logo>
+    <ny-logo [size]="NySize.small" [color]="NyLogoColor.grey"></ny-logo>
+    <ny-logo [size]="NySize.small" [color]="NyLogoColor.navy"></ny-logo>
+    <ny-logo [size]="NySize.small" [color]="NyLogoColor.yellow"></ny-logo>
+    <ny-logo class="dark" [size]="NySize.small" [color]="NyLogoColor.white"></ny-logo>
+    <ny-logo [size]="NySize.small" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
+</div>
+<div class="logo-list">
+    <ny-logo [size]="NySize.medium"></ny-logo>
+    <ny-logo [size]="NySize.medium" [color]="NyLogoColor.blue"></ny-logo>
+    <ny-logo [size]="NySize.medium" [color]="NyLogoColor.grey"></ny-logo>
+    <ny-logo [size]="NySize.medium" [color]="NyLogoColor.navy"></ny-logo>
+    <ny-logo [size]="NySize.medium" [color]="NyLogoColor.yellow"></ny-logo>
+    <ny-logo class="dark" [size]="NySize.medium" [color]="NyLogoColor.white"></ny-logo>
+    <ny-logo [size]="NySize.medium" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
+</div>
+<div class="logo-list">
+    <ny-logo [size]="NySize.large"></ny-logo>
+    <ny-logo [size]="NySize.large" [color]="NyLogoColor.blue"></ny-logo>
+    <ny-logo [size]="NySize.large" [color]="NyLogoColor.grey"></ny-logo>
+    <ny-logo [size]="NySize.large" [color]="NyLogoColor.navy"></ny-logo>
+    <ny-logo [size]="NySize.large" [color]="NyLogoColor.yellow"></ny-logo>
+    <ny-logo class="dark" [size]="NySize.large" [color]="NyLogoColor.white"></ny-logo>
+    <ny-logo [size]="NySize.large" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
 </div>
 
 <h2>Spinners</h2>
