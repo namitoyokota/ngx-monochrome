@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NyColor } from '../abstractions/ny-color';
+import { NyIconConfig } from '../abstractions/ny-icon-config';
 
 @Component({
     selector: 'ny-button',
@@ -10,8 +11,8 @@ export class NyButtonComponent {
     /** Text to display inside of the button */
     @Input() text = '';
 
-    /** Icon to display inside button */
-    @Input() icon = '';
+    /** Configurations for the icon */
+    @Input() iconConfig: NyIconConfig;
 
     /** Color of the button */
     @Input() color = NyColor.white;
@@ -19,7 +20,7 @@ export class NyButtonComponent {
     /** Whether to display outline around button */
     @Input() outline = false;
 
-    /** Event fired when a button is clicked */
+    /** Event fired when button is clicked */
     @Output() clicked = new EventEmitter<void>();
 
     /** Triggered on button click */

@@ -2,8 +2,8 @@
 <input
     class="input"
     type="text"
-    [class.single-padding]="clear !== !!icon"
-    [class.double-padding]="clear && !!icon"
+    [class.single-padding]="clear !== !!iconConfig"
+    [class.double-padding]="clear && !!iconConfig"
     [placeholder]="placeholder"
     [(ngModel)]="text"
     (keyup)="textChanged()"
@@ -11,10 +11,10 @@
 />
 
 <!-- Icons -->
-<div *ngIf="(clear && text) || icon" class="icon-pane">
+<div *ngIf="(clear && text) || iconConfig" class="icon-pane">
     <!-- Clear Icon -->
-    <i *ngIf="clear && text" class="clear-icon fa-solid fa-xmark" (click)="clearText()"></i>
+    <ny-icon *ngIf="clear && text" [config]="closeIconConfig" (clicked)="clearText()"></ny-icon>
 
     <!-- Custom Icon -->
-    <i *ngIf="!!icon" class="fa-solid" [class]="icon"></i>
+    <ny-icon *ngIf="!!iconConfig" [config]="iconConfig"></ny-icon>
 </div>

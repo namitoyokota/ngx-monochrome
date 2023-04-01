@@ -6,6 +6,6 @@
 
     <!-- Close -->
     <ng-container *ngIf="close">
-        <i class="close-icon fa-solid fa-xmark fa-sm" (click)="closeLabel()"></i>
+        <ny-icon [config]="dark ? whiteCloseIcon : blackCloseIcon" (clicked)="closeLabel()"></ny-icon>
     </ng-container>
 </div>

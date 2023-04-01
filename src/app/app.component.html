@@ -24,16 +24,16 @@
 <h2>Button</h2>
 <div class="button-list">
     <ny-button class="dark" [text]="'White Button'" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button [text]="'Outline Button'" [icon]="'fa-star'" [outline]="true" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button [text]="'Outline Button'" [iconConfig]="iconConfig1" [outline]="true" (clicked)="echo('button clicked')"></ny-button>
     <ny-button [text]="'Red Button'" [color]="NyColor.red" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button [text]="'Blue Button'" [icon]="'fa-check'" [color]="NyColor.blue" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button [text]="'Blue Button'" [iconConfig]="iconConfig10" [color]="NyColor.blue" (clicked)="echo('button clicked')"></ny-button>
     <ny-button [text]="'Black Button'" [color]="NyColor.black" (clicked)="echo('button clicked')"></ny-button>
 </div>
 
 <h2>Inputs</h2>
 <div class="input-list">
     <ny-input [placeholder]="'John Doe'" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
-    <ny-input [placeholder]="'Search'" [icon]="'fa-magnifying-glass'" [clear]="true" (searched)="echo('search', $event)"></ny-input>
+    <ny-input [placeholder]="'Search'" [iconConfig]="iconConfig11" [clear]="true" (searched)="echo('search', $event)"></ny-input>
 </div>
 
 <h2>Spinner</h2>
@@ -53,12 +53,12 @@
 <h2>Message</h2>
 <div class="message-list">
     <ny-message [text]="'Light Message'"></ny-message>
-    <ny-message [text]="'Light Message'" [icon]="'fa-circle-info'" [close]="true" (closed)="echo('message closed')"></ny-message>
+    <ny-message [text]="'Light Message'" [iconConfig]="infoIconConfig" [close]="true" (closed)="echo('message closed')"></ny-message>
     <ny-message class="dark" [text]="'Dark Message'" [dark]="true"></ny-message>
     <ny-message
         class="dark"
         [text]="'Dark Message'"
-        [icon]="'fa-circle-question'"
+        [iconConfig]="questionIconConfig"
         [dark]="true"
         [close]="true"
         (closed)="echo('message closed')"

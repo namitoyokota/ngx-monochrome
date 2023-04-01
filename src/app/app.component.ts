@@ -28,6 +28,10 @@ export class AppComponent {
     readonly iconConfig14 = new NyIconConfig('fa-magnifying-glass', NyIconType.solid, NyIconSize.large, NyColor.yellow);
     readonly iconConfig15 = new NyIconConfig('fa-magnifying-glass', NyIconType.solid, NyIconSize.large, NyColor.white);
 
+    /** Configurations to display close icon */
+    readonly infoIconConfig = new NyIconConfig('fa-circle-info', NyIconType.solid, NyIconSize.medium, NyColor.black, false);
+    readonly questionIconConfig = new NyIconConfig('fa-circle-question', NyIconType.solid, NyIconSize.medium, NyColor.white, false);
+
     readonly fit = NyFitType.width;
     readonly NyColor: typeof NyColor = NyColor;
     readonly NySize: typeof NySize = NySize;

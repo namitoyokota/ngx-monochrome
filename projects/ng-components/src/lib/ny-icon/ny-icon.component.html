@@ -1,1 +1,6 @@
-<i class="icon" [class]="config.type + ' ' + config.name + ' ' + config.size + ' ' + config.color"></i>
+<i
+    class="icon"
+    [class]="config.type + ' ' + config.name + ' ' + config.size + ' ' + config.color"
+    [class.clickable]="config.clickable"
+    (click)="iconClicked()"
+></i>
