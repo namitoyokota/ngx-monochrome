@@ -1,6 +1,6 @@
 <h1>@namitoyokota/ng-components</h1>
 
-<h2>Icon</h2>
+<h2>Icons</h2>
 <div class="icon-list">
     <ny-icon [config]="iconConfig1"></ny-icon>
     <ny-icon [config]="iconConfig2"></ny-icon>
@@ -21,7 +21,7 @@
     <ny-icon class="dark" [config]="iconConfig15"></ny-icon>
 </div>
 
-<h2>Button</h2>
+<h2>Buttons</h2>
 <div class="button-list">
     <ny-button class="dark" text="White Button" (clicked)="echo('button clicked')"></ny-button>
     <ny-button text="Outline Button" [iconConfig]="iconConfig1" [outline]="true" (clicked)="echo('button clicked')"></ny-button>
@@ -36,12 +36,6 @@
     <ny-input placeholder="Search" [iconConfig]="iconConfig11" [clear]="true" (searched)="echo('search', $event)"></ny-input>
 </div>
 
-<h2>Spinner</h2>
-<div class="spinner-list">
-    <ny-spinner></ny-spinner>
-    <ny-spinner class="dark" [dark]="true"></ny-spinner>
-</div>
-
 <h2>Labels</h2>
 <div class="label-list">
     <ny-label class="dark" text="Light Label"></ny-label>
@@ -50,7 +44,17 @@
     <ny-label text="Dark Label" [close]="true" [dark]="true" (closed)="echo('label closed')"></ny-label>
 </div>
 
-<h2>Message</h2>
+<h2>Menus</h2>
+<div class="menu-list">
+    <ny-menu
+        text="Context Menu"
+        [iconConfig]="iconConfig6"
+        [options]="menuOptions"
+        (selected)="echo('selected menu', $event.text)"
+    ></ny-menu>
+</div>
+
+<h2>Messages</h2>
 <div class="message-list">
     <ny-message text="Light Message"></ny-message>
     <ny-message text="Light Message" [iconConfig]="infoIconConfig" [close]="true" (closed)="echo('message closed')"></ny-message>
@@ -65,19 +69,19 @@
     ></ny-message>
 </div>
 
-<h2>Divider</h2>
+<h2>Dividers</h2>
 <div class="divider-list">
     <ny-divider></ny-divider>
     <ny-divider class="dark" [dark]="false"></ny-divider>
 </div>
 
-<h2>Link</h2>
+<h2>Links</h2>
 <div class="hyperlink-list">
     <ny-link src="https://www.namito.wiki" text="Portfolio"></ny-link>
     <ny-link class="dark" src="https://www.github.com/namitoyokota" text="GitHub" [dark]="true"></ny-link>
 </div>
 
-<h2>Logo</h2>
+<h2>Logos</h2>
 <div class="logo-list">
     <ny-logo [size]="NySize.large"></ny-logo>
     <ny-logo [size]="NySize.medium"></ny-logo>
@@ -85,7 +89,13 @@
     <ny-logo [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
 </div>
 
-<h2>Image</h2>
+<h2>Spinners</h2>
+<div class="spinner-list">
+    <ny-spinner></ny-spinner>
+    <ny-spinner class="dark" [dark]="true"></ny-spinner>
+</div>
+
+<h2>Images</h2>
 <div class="image-list">
     <ny-image
         class="image-width"

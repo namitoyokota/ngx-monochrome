@@ -9,6 +9,7 @@ import {
     NyLabelModule,
     NyLinkModule,
     NyLogoModule,
+    NyMenuModule,
     NyMessageModule,
     NySpinnerModule,
 } from '@namitoyokota/ng-components';
@@ -29,6 +30,7 @@ import { AppComponent } from './app.component';
         NyLabelModule,
         NyInputModule,
         NyLogoModule,
+        NyMenuModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

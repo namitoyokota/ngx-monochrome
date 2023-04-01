@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NyColor, NyFitType, NyIconConfig, NyIconSize, NyIconType, NySize } from '@namitoyokota/ng-components';
+import { NyColor, NyFitType, NyIconConfig, NyIconSize, NyIconType, NyMenuOption, NySize } from '@namitoyokota/ng-components';
 
 @Component({
     selector: 'app-root',
@@ -31,6 +31,8 @@ export class AppComponent {
     /** Configurations to display close icon */
     readonly infoIconConfig = new NyIconConfig('fa-circle-info', NyIconType.solid, NyIconSize.medium, NyColor.black, false);
     readonly questionIconConfig = new NyIconConfig('fa-circle-question', NyIconType.solid, NyIconSize.medium, NyColor.white, false);
+
+    readonly menuOptions = [new NyMenuOption('Option 1', this.iconConfig7), new NyMenuOption('Option 2', this.iconConfig8)];
 
     readonly fit = NyFitType.width;
     readonly NyColor: typeof NyColor = NyColor;

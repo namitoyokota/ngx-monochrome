@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+:host {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    right: 0;
+
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: 5px;
+
+    .menu-item {
+        display: flex;
+        column-gap: 12px;
+        padding: 8px 16px;
+        transition: 0.1s ease-in-out;
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $black;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $black;
+            color: $white;
+        }
+    }
+}

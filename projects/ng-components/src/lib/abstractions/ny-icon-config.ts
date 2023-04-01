@@ -3,11 +3,11 @@ import { NyIconSize } from './ny-icon-size';
 import { NyIconType } from './ny-icon-type';
 
 export class NyIconConfig {
-    name?: string;
-    type?: NyIconType;
-    size?: NyIconSize;
-    color?: NyColor;
-    clickable?: boolean;
+    name: string;
+    type: NyIconType;
+    size: NyIconSize;
+    color: NyColor;
+    clickable: boolean;
 
     constructor(name?: string, type?: NyIconType, size?: NyIconSize, color?: NyColor, clickable?: boolean) {
         this.name = name ? name : '';
