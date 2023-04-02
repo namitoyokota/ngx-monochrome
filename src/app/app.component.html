@@ -32,6 +32,14 @@
     <ny-button text="Black Button" [color]="NyColor.black" (clicked)="echo('button clicked')"></ny-button>
 </div>
 
+<h2>Button Groups</h2>
+<div class="button-group-list">
+    <ny-button-group class="dark" [buttons]="buttonOptions" (clicked)="echo('button group', $event.text)"></ny-button-group>
+    <ny-button-group [color]="NyColor.red" [buttons]="buttonOptions" (clicked)="echo('button group', $event.text)"></ny-button-group>
+    <ny-button-group [color]="NyColor.blue" [buttons]="buttonOptions" (clicked)="echo('button group', $event.text)"></ny-button-group>
+    <ny-button-group [color]="NyColor.black" [buttons]="buttonOptions" (clicked)="echo('button group', $event.text)"></ny-button-group>
+</div>
+
 <h2>Inputs</h2>
 <div class="input-list">
     <ny-input placeholder="John Doe" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>

@@ -10,6 +10,8 @@ export * from './lib/abstractions/ny-icon-type';
 export * from './lib/abstractions/ny-logo-color';
 export * from './lib/abstractions/ny-menu-option';
 export * from './lib/abstractions/ny-size';
+export * from './lib/ny-button-group/ny-button-group.component';
+export * from './lib/ny-button-group/ny-button-group.module';
 export * from './lib/ny-button/ny-button.component';
 export * from './lib/ny-button/ny-button.module';
 export * from './lib/ny-divider/ny-divider.component';

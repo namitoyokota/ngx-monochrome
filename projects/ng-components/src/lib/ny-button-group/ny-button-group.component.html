@@ -1,0 +1,13 @@
+<div class="button-list" [class]="color">
+    <div *ngFor="let button of buttons" class="button" [class]="color" (click)="buttonClicked(button)">
+        <!-- Icon -->
+        <ng-container *ngIf="button.icon">
+            <ny-icon [config]="button.icon"></ny-icon>
+        </ng-container>
+
+        <!-- Text -->
+        <ng-container *ngIf="button.text">
+            <span>{{ button.text }}</span>
+        </ng-container>
+    </div>
+</div>

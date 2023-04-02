@@ -33,6 +33,7 @@ export class AppComponent {
     readonly questionIconConfig = new NyIconConfig('fa-circle-question', NyIconType.solid, NyIconSize.medium, NyColor.white, false);
 
     readonly menuOptions = [new NyMenuOption('Option 1', this.iconConfig7), new NyMenuOption('Option 2', this.iconConfig8)];
+    readonly buttonOptions = [new NyMenuOption('Button Group 1', this.iconConfig6), new NyMenuOption('Button Group 2', this.iconConfig8)];
 
     readonly fit = NyFitType.width;
     readonly NyColor: typeof NyColor = NyColor;
