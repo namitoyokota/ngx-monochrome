@@ -21,15 +21,23 @@ export class NyMenuComponent {
     @Output() selected = new EventEmitter<NyMenuOption>();
 
     /** Whether context menu is opened */
-    open = false;
+    showMenu = false;
+
+    constructor() {}
 
     /** Opens or closes menu */
     toggleMenu(): void {
-        this.open = !this.open;
+        this.showMenu = !this.showMenu;
+    }
+
+    /** Hides context menu when clicked outside */
+    hideMenu(): void {
+        this.showMenu = false;
     }
 
     /** Triggered on option select */
     selectOption($event: NyMenuOption): void {
         this.selected.emit($event);
+        this.hideMenu();
     }
 }

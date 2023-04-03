@@ -1,8 +1,8 @@
 <!-- Button -->
-<ny-button [text]="text" [iconConfig]="iconConfig" [outline]="true" (clicked)="toggleMenu()"></ny-button>
+<ny-button [text]="text" [iconConfig]="iconConfig" [outline]="true" (clicked)="toggleMenu()" (clickOutside)="hideMenu()"></ny-button>
 
 <!-- Context Menu -->
-<div *ngIf="open && options.length" class="menu">
+<div *ngIf="showMenu && options.length" class="menu">
     <div class="menu-item" *ngFor="let option of options" (click)="selectOption(option)">
         <ny-icon *ngIf="option.icon" [config]="option.icon"></ny-icon>
         <span *ngIf="option.text">{{ option.text }}</span>
