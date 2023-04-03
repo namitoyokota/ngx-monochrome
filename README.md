@@ -1,9 +1,6 @@
 # @namitoyokota/ng-components
 
-[NPM Package](https://www.npmjs.com/package/@namitoyokota/ng-components)
+[![npm](https://img.shields.io/npm/v/@namitoyokota/ng-components)](https://www.npmjs.com/package/@namitoyokota/ng-components)
+[![Twitter](https://img.shields.io/twitter/follow/namitoyokota?style=social)](https://twitter.com/namitoyokota)
 
-[![Publish Package to NPM](https://github.com/namitoyokota/ng-components/actions/workflows/publish.yml/badge.svg)](https://github.com/namitoyokota/ng-components/actions/workflows/publish.yml)
-
-[![Deploy to GitHub Pages](https://github.com/namitoyokota/ng-components/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/namitoyokota/ng-components/actions/workflows/deploy.yml)
-
-![Screenshot](./projects/ng-components/assets/screenshot.png)
+![Screenshot](https://i.imgur.com/nSs513v.png)
