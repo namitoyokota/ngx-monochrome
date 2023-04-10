@@ -19,6 +19,9 @@ export class NySwitchComponent {
         }
     }
 
+    /** Dark mode */
+    @Input() dark = false;
+
     /** Sends event on option select */
     @Output() changed = new EventEmitter<NyMenuOption>();
 
