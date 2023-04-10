@@ -9,12 +9,10 @@ html {
 
     // ! https://www.magicpattern.design/tools/css-backgrounds
     // background-color: #fff;
-    // opacity: 0.8;
     // background-image: radial-gradient(#000 0.5px, #fff 0.5px);
     // background-size: 25px 25px;
 
     background-color: #fff;
-    opacity: 0.8;
     background-image: radial-gradient(#000 0.5px, transparent 0.5px), radial-gradient(#000 0.5px, #fff 0.5px);
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px;
