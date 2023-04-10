@@ -36,3 +36,5 @@ export * from './lib/ny-message/ny-message.component';
 export * from './lib/ny-message/ny-message.module';
 export * from './lib/ny-spinner/ny-spinner.component';
 export * from './lib/ny-spinner/ny-spinner.module';
+export * from './lib/ny-switch/ny-switch.component';
+export * from './lib/ny-switch/ny-switch.module';

@@ -67,12 +67,17 @@
     <ny-label text="Dark Label" [close]="true" [dark]="true" (closed)="echo('label closed')"></ny-label>
 </div>
 
+<h2>Switches</h2>
+<div class="switch-list">
+    <ny-switch [options]="menuOptionsDark" (changed)="echo('switch changed', $event.text)"></ny-switch>
+</div>
+
 <h2>Menus</h2>
 <div class="menu-list">
     <ny-menu
         text="Context Menu"
         [iconConfig]="iconConfig2"
-        [options]="menuOptions"
+        [options]="menuOptionsLight"
         (selected)="echo('selected menu', $event.text)"
     ></ny-menu>
 </div>

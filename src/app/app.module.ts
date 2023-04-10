@@ -14,6 +14,7 @@ import {
     NyMenuModule,
     NyMessageModule,
     NySpinnerModule,
+    NySwitchModule,
 } from '@namitoyokota/ng-components';
 
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { AppComponent } from './app.component';
         NyMenuModule,
         NyButtonGroupModule,
         NyCaptionModule,
+        NySwitchModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

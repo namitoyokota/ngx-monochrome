@@ -23,7 +23,9 @@ export class AppComponent {
     readonly infoIconConfig = new NyIconConfig('fa-circle-info', NyIconType.solid, NyIconSize.medium, false, false);
     readonly questionIconConfig = new NyIconConfig('fa-circle-question', NyIconType.solid, NyIconSize.medium, false, false);
 
-    readonly menuOptions = [new NyMenuOption('Option 1', this.iconConfig1), new NyMenuOption('Option 2', this.iconConfig1)];
+    readonly menuOptionsLight = [new NyMenuOption('Option 1', this.iconConfig1), new NyMenuOption('Option 2', this.iconConfig1)];
+    readonly menuOptionsDark = [new NyMenuOption('Option 1', this.iconConfig2), new NyMenuOption('Option 2', this.iconConfig2)];
+
     readonly buttonOptionsLight = [
         new NyMenuOption('Button Group 1', this.iconConfig2),
         new NyMenuOption('Button Group 2', this.iconConfig2),
