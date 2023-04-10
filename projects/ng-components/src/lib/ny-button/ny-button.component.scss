@@ -8,7 +8,7 @@
     border-radius: 5px;
     padding: 5px 10px;
 
-    &.white {
+    &.dark {
         background-color: $white;
         color: $black;
 
@@ -17,22 +17,13 @@
         }
     }
 
-    &.red {
-        border: 1px solid $red;
-        background-color: $red;
-        color: $white;
-    }
-
-    &.blue {
-        border: 1px solid $blue;
-        background-color: $blue;
-        color: $white;
-    }
-
-    &.black {
-        border: 1px solid $black;
+    &.light {
         background-color: $black;
         color: $white;
+
+        &.outline {
+            border: 1px solid $white;
+        }
     }
 
     &:hover {

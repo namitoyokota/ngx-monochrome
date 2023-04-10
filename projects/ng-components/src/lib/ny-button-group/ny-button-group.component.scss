@@ -17,34 +17,32 @@
 
     &:last-of-type {
         border-radius: 0 5px 5px 0;
+
+        &.outline {
+            border-left: none !important;
+        }
+    }
+
+    &.dark {
+        background-color: $white;
+        color: $black;
+
+        &.outline {
+            border: 1px solid $black;
+        }
+    }
+
+    &.light {
+        background-color: $black;
+        color: $white;
+
+        &.outline {
+            border: 1px solid $white;
+        }
     }
 
     &:hover {
         cursor: pointer;
         filter: brightness(85%);
-    }
-
-    // TODO: below stylings should be in a shared stylesheet
-    &.white {
-        background-color: $white;
-        color: $black;
-    }
-
-    &.red,
-    &.blue,
-    &.black {
-        color: $white;
-    }
-
-    &.red {
-        background-color: $red;
-    }
-
-    &.blue {
-        background-color: $blue;
-    }
-
-    &.black {
-        background-color: $black;
     }
 }

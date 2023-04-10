@@ -1,23 +1,11 @@
 @import "../../../styles/variables.scss";
 
 .icon {
-    &.white {
+    &.dark {
         color: $white;
     }
 
-    &.red {
-        color: $red;
-    }
-
-    &.blue {
-        color: $blue;
-    }
-
-    &.yellow {
-        color: $yellow;
-    }
-
-    &.black {
+    &.light {
         color: $black;
     }
 

@@ -1,6 +1,6 @@
 <i
     class="icon"
-    [class]="config.type + ' ' + config.name + ' ' + config.size + ' ' + config.color"
+    [class]="config.type + ' ' + config.name + ' ' + config.size + ' ' + (config.dark ? 'dark' : 'light')"
     [class.clickable]="config.clickable"
     (click)="iconClicked()"
 ></i>

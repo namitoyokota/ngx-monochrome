@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { NyColor } from '../abstractions/ny-color';
 import { NyMenuOption } from '../abstractions/ny-menu-option';
 
 @Component({
@@ -11,8 +10,11 @@ export class NyButtonGroupComponent {
     /** List of button configs to display */
     @Input() buttons: NyMenuOption[] = [];
 
-    /** Color of the button */
-    @Input() color = NyColor.white;
+    /** Whether to display in dark mode */
+    @Input() dark = false;
+
+    /** Whether to display outline around button */
+    @Input() outline = false;
 
     /** Event fired when button is clicked */
     @Output() clicked = new EventEmitter<NyMenuOption>();

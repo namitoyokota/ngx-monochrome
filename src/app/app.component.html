@@ -3,47 +3,60 @@
 <h2>Icons</h2>
 <div class="icon-list">
     <ny-icon [config]="iconConfig1"></ny-icon>
-    <ny-icon [config]="iconConfig2"></ny-icon>
+    <ny-icon class="dark" [config]="iconConfig2"></ny-icon>
     <ny-icon [config]="iconConfig3"></ny-icon>
-    <ny-icon [config]="iconConfig4"></ny-icon>
-    <ny-icon class="dark" [config]="iconConfig5"></ny-icon>
-</div>
-<div class="icon-list">
-    <ny-icon [config]="iconConfig6"></ny-icon>
-    <ny-icon [config]="iconConfig7"></ny-icon>
-    <ny-icon [config]="iconConfig8"></ny-icon>
-    <ny-icon [config]="iconConfig9"></ny-icon>
-    <ny-icon class="dark" [config]="iconConfig10"></ny-icon>
-</div>
-<div class="icon-list">
-    <ny-icon [config]="iconConfig11"></ny-icon>
-    <ny-icon [config]="iconConfig12"></ny-icon>
-    <ny-icon [config]="iconConfig13"></ny-icon>
-    <ny-icon [config]="iconConfig14"></ny-icon>
-    <ny-icon class="dark" [config]="iconConfig15"></ny-icon>
+    <ny-icon class="dark" [config]="iconConfig4"></ny-icon>
+    <ny-icon [config]="iconConfig5"></ny-icon>
+    <ny-icon class="dark" [config]="iconConfig6"></ny-icon>
 </div>
 
 <h2>Buttons</h2>
 <div class="button-list">
-    <ny-button class="dark" text="White Button" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button text="Outline Button" [iconConfig]="iconConfig1" [outline]="true" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button text="Red Button" [color]="NyColor.red" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button text="Blue Button" [iconConfig]="iconConfig10" [color]="NyColor.blue" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button text="Black Button" [color]="NyColor.black" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button text="Light Button" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button
+        class="dark"
+        text="Outline Button"
+        [outline]="true"
+        [iconConfig]="iconConfig2"
+        (clicked)="echo('button clicked')"
+    ></ny-button>
+    <ny-button class="dark" text="Dark Button" [dark]="true" (clicked)="echo('button clicked')"></ny-button>
+    <ny-button
+        text="Outline Button"
+        [dark]="true"
+        [outline]="true"
+        [iconConfig]="iconConfig1"
+        (clicked)="echo('button clicked')"
+    ></ny-button>
 </div>
 
 <h2>Button Groups</h2>
 <div class="button-group-list">
-    <ny-button-group class="dark" [buttons]="buttonOptions" (clicked)="echo('button group', $event.text)"></ny-button-group>
-    <ny-button-group [color]="NyColor.red" [buttons]="buttonOptions" (clicked)="echo('button group', $event.text)"></ny-button-group>
-    <ny-button-group [color]="NyColor.blue" [buttons]="buttonOptions" (clicked)="echo('button group', $event.text)"></ny-button-group>
-    <ny-button-group [color]="NyColor.black" [buttons]="buttonOptions" (clicked)="echo('button group', $event.text)"></ny-button-group>
+    <ny-button-group [buttons]="buttonOptionsLight" (clicked)="echo('button group', $event.text)"></ny-button-group>
+    <ny-button-group
+        class="dark"
+        [outline]="true"
+        [buttons]="buttonOptionsLight"
+        (clicked)="echo('button group', $event.text)"
+    ></ny-button-group>
+    <ny-button-group
+        class="dark"
+        [dark]="true"
+        [buttons]="buttonOptionsDark"
+        (clicked)="echo('button group', $event.text)"
+    ></ny-button-group>
+    <ny-button-group
+        [dark]="true"
+        [outline]="true"
+        [buttons]="buttonOptionsDark"
+        (clicked)="echo('button group', $event.text)"
+    ></ny-button-group>
 </div>
 
 <h2>Inputs</h2>
 <div class="input-list">
     <ny-input placeholder="John Doe" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
-    <ny-input placeholder="Search" [iconConfig]="iconConfig11" [clear]="true" (searched)="echo('search', $event)"></ny-input>
+    <ny-input placeholder="Search" [iconConfig]="iconConfig1" [clear]="true" (searched)="echo('search', $event)"></ny-input>
 </div>
 
 <h2>Labels</h2>
@@ -58,7 +71,7 @@
 <div class="menu-list">
     <ny-menu
         text="Context Menu"
-        [iconConfig]="iconConfig6"
+        [iconConfig]="iconConfig2"
         [options]="menuOptions"
         (selected)="echo('selected menu', $event.text)"
     ></ny-menu>

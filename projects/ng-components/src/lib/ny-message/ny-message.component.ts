@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { NyColor } from '../abstractions/ny-color';
 import { NyIconConfig } from '../abstractions/ny-icon-config';
 import { NyIconSize } from '../abstractions/ny-icon-size';
 import { NyIconType } from '../abstractions/ny-icon-type';
@@ -26,10 +25,10 @@ export class NyMessageComponent {
     @Output() closed = new EventEmitter<void>();
 
     /** Configurations to display close icon - black version */
-    readonly blackCloseIcon = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, NyColor.black, true);
+    readonly blackCloseIcon = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, false, true);
 
     /** Configurations to display close icon - white version */
-    readonly whiteCloseIcon = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, NyColor.white, true);
+    readonly whiteCloseIcon = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, true, true);
 
     /** Triggered on close click */
     closeMessage(): void {
