@@ -14,6 +14,8 @@ export * from './lib/ny-button-group/ny-button-group.component';
 export * from './lib/ny-button-group/ny-button-group.module';
 export * from './lib/ny-button/ny-button.component';
 export * from './lib/ny-button/ny-button.module';
+export * from './lib/ny-caption/ny-caption.component';
+export * from './lib/ny-caption/ny-caption.module';
 export * from './lib/ny-divider/ny-divider.component';
 export * from './lib/ny-divider/ny-divider.module';
 export * from './lib/ny-icon/ny-icon.component';

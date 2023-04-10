@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {
     NyButtonGroupModule,
     NyButtonModule,
+    NyCaptionModule,
     NyDividerModule,
     NyIconModule,
     NyImageModule,
@@ -33,6 +34,7 @@ import { AppComponent } from './app.component';
         NyLogoModule,
         NyMenuModule,
         NyButtonGroupModule,
+        NyCaptionModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

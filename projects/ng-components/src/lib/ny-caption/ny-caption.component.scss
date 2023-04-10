@@ -1,0 +1,15 @@
+@import "../../../styles/variables.scss";
+
+.text {
+    padding: 2px 5px;
+}
+
+.dark {
+    color: $black;
+    background-color: $white;
+}
+
+.light {
+    color: $white;
+    background-color: $black;
+}
