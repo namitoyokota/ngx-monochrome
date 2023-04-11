@@ -13,19 +13,16 @@ export class AppComponent {
     /** Toggles current theme */
     toggleTheme(menu: NyMenuOption): void {
         this.darkMode = menu.icon.name === 'fa-sun';
+
+        this.iconConfig1.dark = this.darkMode;
+        this.iconConfig2.dark = this.darkMode;
+        this.iconConfig3.dark = this.darkMode;
     }
 
-    // Small Icon Configurations
-    readonly iconConfig1 = new NyIconConfig('fa-star', NyIconType.solid, NyIconSize.small);
-    readonly iconConfig2 = new NyIconConfig('fa-star', NyIconType.solid, NyIconSize.small, true);
-
-    // Medium Icon Configurations
-    readonly iconConfig3 = new NyIconConfig('fa-bookmark', NyIconType.solid, NyIconSize.medium);
-    readonly iconConfig4 = new NyIconConfig('fa-bookmark', NyIconType.solid, NyIconSize.medium, true);
-
-    // Large Icon Configurations
-    readonly iconConfig5 = new NyIconConfig('fa-magnifying-glass', NyIconType.solid, NyIconSize.large);
-    readonly iconConfig6 = new NyIconConfig('fa-magnifying-glass', NyIconType.solid, NyIconSize.large, true);
+    // Icon Configurations
+    readonly iconConfig1 = new NyIconConfig('fa-star', NyIconType.solid, NyIconSize.small, this.darkMode);
+    readonly iconConfig2 = new NyIconConfig('fa-bookmark', NyIconType.solid, NyIconSize.medium, this.darkMode);
+    readonly iconConfig3 = new NyIconConfig('fa-magnifying-glass', NyIconType.solid, NyIconSize.large, this.darkMode);
 
     /** Configurations to display close icon */
     readonly infoIconConfig = new NyIconConfig('fa-circle-info', NyIconType.solid, NyIconSize.medium, false, false);

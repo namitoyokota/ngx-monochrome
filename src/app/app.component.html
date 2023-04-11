@@ -6,17 +6,9 @@
 <ny-page [dark]="darkMode">
     <h2>Icons</h2>
     <div class="icon-list">
-        <ng-container *ngIf="darkMode">
-            <ny-icon [config]="iconConfig2"></ny-icon>
-            <ny-icon [config]="iconConfig4"></ny-icon>
-            <ny-icon [config]="iconConfig6"></ny-icon>
-        </ng-container>
-
-        <ng-container *ngIf="!darkMode">
-            <ny-icon [config]="iconConfig1"></ny-icon>
-            <ny-icon [config]="iconConfig3"></ny-icon>
-            <ny-icon [config]="iconConfig5"></ny-icon>
-        </ng-container>
+        <ny-icon [config]="iconConfig1"></ny-icon>
+        <ny-icon [config]="iconConfig2"></ny-icon>
+        <ny-icon [config]="iconConfig3"></ny-icon>
     </div>
 
     <h2>Buttons</h2>
