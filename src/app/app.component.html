@@ -3,157 +3,135 @@
     <ny-theme-switch (changed)="toggleTheme($event)"></ny-theme-switch>
 </div>
 
-<h2>Icons</h2>
-<div class="icon-list">
-    <ny-icon [config]="iconConfig1"></ny-icon>
-    <ny-icon class="dark" [config]="iconConfig2"></ny-icon>
-    <ny-icon [config]="iconConfig3"></ny-icon>
-    <ny-icon class="dark" [config]="iconConfig4"></ny-icon>
-    <ny-icon [config]="iconConfig5"></ny-icon>
-    <ny-icon class="dark" [config]="iconConfig6"></ny-icon>
-</div>
+<ny-page [dark]="darkMode">
+    <h2>Icons</h2>
+    <div class="icon-list">
+        <ng-container *ngIf="darkMode">
+            <ny-icon [config]="iconConfig2"></ny-icon>
+            <ny-icon [config]="iconConfig4"></ny-icon>
+            <ny-icon [config]="iconConfig6"></ny-icon>
+        </ng-container>
 
-<h2>Buttons</h2>
-<div class="button-list">
-    <ny-button text="Light Button" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button
-        class="dark"
-        text="Outline Button"
-        [outline]="true"
-        [iconConfig]="iconConfig2"
-        (clicked)="echo('button clicked')"
-    ></ny-button>
-    <ny-button class="dark" text="Dark Button" [dark]="true" (clicked)="echo('button clicked')"></ny-button>
-    <ny-button
-        text="Outline Button"
-        [dark]="true"
-        [outline]="true"
-        [iconConfig]="iconConfig1"
-        (clicked)="echo('button clicked')"
-    ></ny-button>
-</div>
+        <ng-container *ngIf="!darkMode">
+            <ny-icon [config]="iconConfig1"></ny-icon>
+            <ny-icon [config]="iconConfig3"></ny-icon>
+            <ny-icon [config]="iconConfig5"></ny-icon>
+        </ng-container>
+    </div>
 
-<h2>Button Groups</h2>
-<div class="button-group-list">
-    <ny-button-group [buttons]="buttonOptionsLight" (clicked)="echo('button group', $event.text)"></ny-button-group>
-    <ny-button-group
-        class="dark"
-        [outline]="true"
-        [buttons]="buttonOptionsLight"
-        (clicked)="echo('button group', $event.text)"
-    ></ny-button-group>
-    <ny-button-group
-        class="dark"
-        [dark]="true"
-        [buttons]="buttonOptionsDark"
-        (clicked)="echo('button group', $event.text)"
-    ></ny-button-group>
-    <ny-button-group
-        [dark]="true"
-        [outline]="true"
-        [buttons]="buttonOptionsDark"
-        (clicked)="echo('button group', $event.text)"
-    ></ny-button-group>
-</div>
+    <h2>Buttons</h2>
+    <div class="button-list">
+        <ny-button text="Button" [dark]="darkMode" (clicked)="echo('button clicked')"></ny-button>
+        <ny-button
+            text="Outline Button"
+            [dark]="darkMode"
+            [outline]="true"
+            [iconConfig]="iconConfig2"
+            (clicked)="echo('button clicked')"
+        ></ny-button>
+    </div>
 
-<h2>Inputs</h2>
-<div class="input-list">
-    <ny-input placeholder="John Doe" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
-    <ny-input placeholder="Search" [iconConfig]="iconConfig1" [clear]="true" (searched)="echo('search', $event)"></ny-input>
-</div>
+    <h2>Button Groups</h2>
+    <div class="button-group-list">
+        <ny-button-group [buttons]="buttonOptionsLight" [dark]="darkMode" (clicked)="echo('button group', $event.text)"></ny-button-group>
+        <ny-button-group
+            [dark]="darkMode"
+            [outline]="true"
+            [buttons]="buttonOptionsLight"
+            (clicked)="echo('button group', $event.text)"
+        ></ny-button-group>
+    </div>
 
-<h2>Labels</h2>
-<div class="label-list">
-    <ny-label class="dark" text="Light Label"></ny-label>
-    <ny-label class="dark" text="Light Label" [close]="true" (closed)="echo('label closed')"></ny-label>
-    <ny-label text="Dark Label" [dark]="true"></ny-label>
-    <ny-label text="Dark Label" [close]="true" [dark]="true" (closed)="echo('label closed')"></ny-label>
-</div>
+    <h2>Inputs</h2>
+    <div class="input-list">
+        <ny-input placeholder="John Doe" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
+        <ny-input placeholder="Search" [iconConfig]="iconConfig1" [clear]="true" (searched)="echo('search', $event)"></ny-input>
+    </div>
 
-<h2>Switch</h2>
-<div class="switch-list">
-    <ny-switch [options]="menuOptionsDark" (changed)="echo('switch changed', $event.text)"></ny-switch>
-</div>
+    <h2>Labels</h2>
+    <div class="label-list">
+        <ny-label text="Label" [dark]="darkMode"></ny-label>
+        <ny-label text="Label" [dark]="darkMode" [close]="true" (closed)="echo('label closed')"></ny-label>
+    </div>
 
-<h2>Menu</h2>
-<div class="menu-list">
-    <ny-menu
-        text="Context Menu"
-        [iconConfig]="iconConfig2"
-        [options]="menuOptionsLight"
-        (selected)="echo('selected menu', $event.text)"
-    ></ny-menu>
-</div>
+    <h2>Switch</h2>
+    <div class="switch-list">
+        <ny-switch [options]="menuOptionsDark" [dark]="darkMode" (changed)="echo('switch changed', $event.text)"></ny-switch>
+    </div>
 
-<h2>Messages</h2>
-<div class="message-list">
-    <ny-message text="Light Message"></ny-message>
-    <ny-message text="Light Message" [iconConfig]="infoIconConfig" [close]="true" (closed)="echo('message closed')"></ny-message>
-    <ny-message class="dark" text="Dark Message" [dark]="true"></ny-message>
-    <ny-message
-        class="dark"
-        text="Dark Message"
-        [iconConfig]="questionIconConfig"
-        [dark]="true"
-        [close]="true"
-        (closed)="echo('message closed')"
-    ></ny-message>
-</div>
+    <h2>Menu</h2>
+    <div class="menu-list">
+        <ny-menu
+            text="Context Menu"
+            [iconConfig]="iconConfig2"
+            [options]="menuOptionsLight"
+            (selected)="echo('selected menu', $event.text)"
+        ></ny-menu>
+    </div>
 
-<h2>Dividers</h2>
-<div class="divider-list">
-    <ny-divider></ny-divider>
-    <ny-divider class="dark" [dark]="false"></ny-divider>
-</div>
+    <h2>Messages</h2>
+    <div class="message-list">
+        <ny-message text="Message" [dark]="darkMode"></ny-message>
+        <ny-message
+            text="Message"
+            [dark]="darkMode"
+            [iconConfig]="infoIconConfig"
+            [close]="true"
+            (closed)="echo('message closed')"
+        ></ny-message>
+    </div>
 
-<h2>Captions</h2>
-<div class="caption-list">
-    <ny-caption text="This is a message for the user"></ny-caption>
-    <ny-caption class="dark" text="This is another message for the user but in dark mode" [dark]="true"></ny-caption>
-</div>
+    <h2>Dividers</h2>
+    <div class="divider-list">
+        <ny-divider [dark]="darkMode"></ny-divider>
+    </div>
 
-<h2>Links</h2>
-<div class="hyperlink-list">
-    <ny-link src="https://www.namito.wiki" text="Portfolio"></ny-link>
-    <ny-link class="dark" src="https://www.github.com/namitoyokota" text="GitHub" [dark]="true"></ny-link>
-</div>
+    <h2>Captions</h2>
+    <div class="caption-list">
+        <ny-caption text="This is a message for the user" [dark]="darkMode"></ny-caption>
+    </div>
 
-<h2>Logos</h2>
-<div class="logo-list">
-    <ny-logo [size]="NySize.small"></ny-logo>
-    <ny-logo [size]="NySize.small" [color]="NyLogoColor.blue"></ny-logo>
-    <ny-logo [size]="NySize.small" [color]="NyLogoColor.grey"></ny-logo>
-    <ny-logo [size]="NySize.small" [color]="NyLogoColor.navy"></ny-logo>
-    <ny-logo [size]="NySize.small" [color]="NyLogoColor.yellow"></ny-logo>
-    <ny-logo class="dark" [size]="NySize.small" [color]="NyLogoColor.white"></ny-logo>
-    <ny-logo [size]="NySize.small" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
-</div>
-<div class="logo-list">
-    <ny-logo [size]="NySize.medium"></ny-logo>
-    <ny-logo [size]="NySize.medium" [color]="NyLogoColor.blue"></ny-logo>
-    <ny-logo [size]="NySize.medium" [color]="NyLogoColor.grey"></ny-logo>
-    <ny-logo [size]="NySize.medium" [color]="NyLogoColor.navy"></ny-logo>
-    <ny-logo [size]="NySize.medium" [color]="NyLogoColor.yellow"></ny-logo>
-    <ny-logo class="dark" [size]="NySize.medium" [color]="NyLogoColor.white"></ny-logo>
-    <ny-logo [size]="NySize.medium" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
-</div>
-<div class="logo-list">
-    <ny-logo [size]="NySize.large"></ny-logo>
-    <ny-logo [size]="NySize.large" [color]="NyLogoColor.blue"></ny-logo>
-    <ny-logo [size]="NySize.large" [color]="NyLogoColor.grey"></ny-logo>
-    <ny-logo [size]="NySize.large" [color]="NyLogoColor.navy"></ny-logo>
-    <ny-logo [size]="NySize.large" [color]="NyLogoColor.yellow"></ny-logo>
-    <ny-logo class="dark" [size]="NySize.large" [color]="NyLogoColor.white"></ny-logo>
-    <ny-logo [size]="NySize.large" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
-</div>
+    <h2>Links</h2>
+    <div class="hyperlink-list">
+        <ny-link src="https://www.github.com/namitoyokota" text="GitHub" [dark]="darkMode"></ny-link>
+    </div>
 
-<h2>Spinners</h2>
-<div class="spinner-list">
-    <ny-spinner></ny-spinner>
-    <ny-spinner class="dark" [dark]="true"></ny-spinner>
-</div>
+    <h2>Logos</h2>
+    <div class="logo-list">
+        <ny-logo [size]="NySize.small"></ny-logo>
+        <ny-logo [size]="NySize.small" [color]="NyLogoColor.blue"></ny-logo>
+        <ny-logo [size]="NySize.small" [color]="NyLogoColor.grey"></ny-logo>
+        <ny-logo [size]="NySize.small" [color]="NyLogoColor.navy"></ny-logo>
+        <ny-logo [size]="NySize.small" [color]="NyLogoColor.yellow"></ny-logo>
+        <ny-logo [size]="NySize.small" [color]="NyLogoColor.white"></ny-logo>
+        <ny-logo [size]="NySize.small" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
+    </div>
+    <div class="logo-list">
+        <ny-logo [size]="NySize.medium"></ny-logo>
+        <ny-logo [size]="NySize.medium" [color]="NyLogoColor.blue"></ny-logo>
+        <ny-logo [size]="NySize.medium" [color]="NyLogoColor.grey"></ny-logo>
+        <ny-logo [size]="NySize.medium" [color]="NyLogoColor.navy"></ny-logo>
+        <ny-logo [size]="NySize.medium" [color]="NyLogoColor.yellow"></ny-logo>
+        <ny-logo [size]="NySize.medium" [color]="NyLogoColor.white"></ny-logo>
+        <ny-logo [size]="NySize.medium" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
+    </div>
+    <div class="logo-list">
+        <ny-logo [size]="NySize.large"></ny-logo>
+        <ny-logo [size]="NySize.large" [color]="NyLogoColor.blue"></ny-logo>
+        <ny-logo [size]="NySize.large" [color]="NyLogoColor.grey"></ny-logo>
+        <ny-logo [size]="NySize.large" [color]="NyLogoColor.navy"></ny-logo>
+        <ny-logo [size]="NySize.large" [color]="NyLogoColor.yellow"></ny-logo>
+        <ny-logo [size]="NySize.large" [color]="NyLogoColor.white"></ny-logo>
+        <ny-logo [size]="NySize.large" [clickable]="true" (clicked)="echo('logo clicked')"></ny-logo>
+    </div>
 
-<h2>Images</h2>
-<div class="image-list">
-    <ny-image class="image-width" src="assets/favicon.png" [showLoading]="true" [fit]="fit"></ny-image>
-</div>
+    <h2>Spinners</h2>
+    <div class="spinner-list">
+        <ny-spinner [dark]="darkMode"></ny-spinner>
+    </div>
+
+    <h2>Images</h2>
+    <div class="image-list">
+        <ny-image class="image-width" src="assets/favicon.png" [showLoading]="true" [fit]="fit"></ny-image>
+    </div>
+</ny-page>

@@ -7,12 +7,12 @@
     border-radius: 5px;
     padding: 2px 10px;
 
-    &.light {
+    &.dark {
         background-color: $white;
         color: $black;
     }
 
-    &.dark {
+    &.light {
         background-color: $black;
         color: $white;
     }

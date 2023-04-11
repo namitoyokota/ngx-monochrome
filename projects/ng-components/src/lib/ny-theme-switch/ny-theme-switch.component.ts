@@ -14,7 +14,7 @@ export class NyThemeSwitchComponent {
     @Output() changed = new EventEmitter<NyMenuOption>();
 
     /** Whether to use dark theme button */
-    dark = false;
+    dark = true;
 
     /** Icon to select light theme */
     readonly sunIcon = new NyIconConfig('fa-sun', NyIconType.solid, NyIconSize.medium, true);
@@ -23,7 +23,7 @@ export class NyThemeSwitchComponent {
     readonly moonIcon = new NyIconConfig('fa-moon', NyIconType.solid, NyIconSize.medium);
 
     /** Themes as options */
-    readonly themes = [new NyMenuOption('', this.sunIcon), new NyMenuOption('', this.moonIcon)];
+    readonly themes = [new NyMenuOption('', this.moonIcon), new NyMenuOption('', this.sunIcon)];
 
     /** Emits event when theme changed */
     change(theme: NyMenuOption): void {
