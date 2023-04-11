@@ -7,6 +7,14 @@ import { NyColor, NyFitType, NyIconConfig, NyIconSize, NyIconType, NyLogoColor, 
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+    /** Wether the page is in dark mode */
+    darkMode = false;
+
+    /** Toggles current theme */
+    toggleTheme(menu: NyMenuOption): void {
+        this.darkMode = menu.icon.name === 'fa-sun';
+    }
+
     // Small Icon Configurations
     readonly iconConfig1 = new NyIconConfig('fa-star', NyIconType.solid, NyIconSize.small);
     readonly iconConfig2 = new NyIconConfig('fa-star', NyIconType.solid, NyIconSize.small, true);

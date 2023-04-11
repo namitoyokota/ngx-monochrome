@@ -5,6 +5,13 @@
     flex-direction: column;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: auto min-content;
+    column-gap: 20px;
+    align-items: center;
+}
+
 .icon-list,
 .button-list,
 .button-group-list,
@@ -13,7 +20,6 @@
 .hyperlink-list,
 .logo-list,
 .switch-list,
-.theme-switch-list,
 .menu-list {
     display: flex;
     column-gap: 10px;
