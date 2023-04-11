@@ -18,6 +18,9 @@ export class NyInputComponent {
     /** Configurations for the icon */
     @Input() iconConfig: NyIconConfig;
 
+    /** Whether to display in dark mode */
+    @Input() dark = false;
+
     /** Whether to display clear text button */
     @Input() clear = false;
 
@@ -27,8 +30,11 @@ export class NyInputComponent {
     /** Event fired when a enter is pressed */
     @Output() searched = new EventEmitter<string>();
 
-    /** Configurations to display close icon */
-    readonly closeIconConfig = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, false, true);
+    /** Configurations to display close icon (light version) */
+    readonly closeIconConfigLight = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, false, true);
+
+    /** Configurations to display close icon (light version) */
+    readonly closeIconConfigDark = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, true, true);
 
     /** Triggered on clear icon click */
     clearText(): void {

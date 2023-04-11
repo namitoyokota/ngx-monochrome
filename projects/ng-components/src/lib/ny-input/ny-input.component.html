@@ -2,6 +2,7 @@
 <input
     class="input"
     type="text"
+    [class]="dark ? 'dark' : 'light'"
     [class.single-padding]="clear !== !!iconConfig"
     [class.double-padding]="clear && !!iconConfig"
     [placeholder]="placeholder"
@@ -13,7 +14,7 @@
 <!-- Icons -->
 <div *ngIf="(clear && text) || iconConfig" class="icon-pane">
     <!-- Clear Icon -->
-    <ny-icon *ngIf="clear && text" [config]="closeIconConfig" (clicked)="clearText()"></ny-icon>
+    <ny-icon *ngIf="clear && text" [config]="dark ? closeIconConfigDark : closeIconConfigLight" (clicked)="clearText()"></ny-icon>
 
     <!-- Custom Icon -->
     <ny-icon *ngIf="!!iconConfig" [config]="iconConfig"></ny-icon>

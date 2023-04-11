@@ -14,6 +14,16 @@
     border-radius: 8px;
     border: 1px solid $gray;
 
+    &.dark {
+        color: $white;
+        background-color: $black;
+    }
+
+    &.light {
+        color: $black;
+        background-color: $white;
+    }
+
     &.single-padding {
         padding-right: 35px;
     }
@@ -24,7 +34,14 @@
 
     &:focus {
         outline: none;
-        border-color: $black;
+
+        &.dark {
+            border-color: $white;
+        }
+
+        &.light {
+            border-color: $black;
+        }
     }
 }
 

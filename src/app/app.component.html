@@ -36,8 +36,14 @@
 
     <h2>Inputs</h2>
     <div class="input-list">
-        <ny-input placeholder="John Doe" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
-        <ny-input placeholder="Search" [iconConfig]="iconConfig1" [clear]="true" (searched)="echo('search', $event)"></ny-input>
+        <ny-input placeholder="John Doe" [dark]="darkMode" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
+        <ny-input
+            placeholder="Search"
+            [dark]="darkMode"
+            [iconConfig]="iconConfig1"
+            [clear]="true"
+            (searched)="echo('search', $event)"
+        ></ny-input>
     </div>
 
     <h2>Labels</h2>
