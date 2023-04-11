@@ -21,11 +21,11 @@ export class NyLabelComponent {
     /** Event fired when a closed is clicked */
     @Output() closed = new EventEmitter<void>();
 
-    /** Configurations to display close icon - black version */
-    readonly blackCloseIcon = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, false, true);
+    /** Configurations to display close icon - light version */
+    readonly closeIconLight = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, true, true);
 
-    /** Configurations to display close icon - white version */
-    readonly whiteCloseIcon = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, true, true);
+    /** Configurations to display close icon - dark version */
+    readonly closeIconDark = new NyIconConfig('fa-xmark', NyIconType.solid, NyIconSize.medium, false, true);
 
     /** Triggered on close click */
     closeLabel(): void {
