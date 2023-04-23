@@ -3,8 +3,6 @@
     class="input"
     type="text"
     [class]="dark ? 'dark' : 'light'"
-    [class.single-padding]="clear !== !!iconConfig"
-    [class.double-padding]="clear && !!iconConfig"
     [placeholder]="placeholder"
     [(ngModel)]="text"
     (keyup)="textChanged()"
