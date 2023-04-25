@@ -21,6 +21,7 @@
             border: 1px solid $black;
         }
 
+        &.disabled,
         &:hover {
             filter: brightness(85%);
         }
@@ -34,12 +35,17 @@
             border: 1px solid $white;
         }
 
+        &.disabled,
         &:hover {
             opacity: 0.8;
         }
     }
 
-    &:hover {
+    &:not(.disabled):hover {
         cursor: pointer;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
     }
 }

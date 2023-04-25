@@ -10,6 +10,9 @@ export class NyButtonComponent {
     /** Text to display inside of the button */
     @Input() text = '';
 
+    /** Whether button can be clicked or not */
+    @Input() disabled = false;
+
     /** Configurations for the icon */
     @Input() iconConfig: NyIconConfig;
 
@@ -24,6 +27,8 @@ export class NyButtonComponent {
 
     /** Triggered on button click */
     buttonClicked(): void {
-        this.clicked.emit();
+        if (!this.disabled) {
+            this.clicked.emit();
+        }
     }
 }
