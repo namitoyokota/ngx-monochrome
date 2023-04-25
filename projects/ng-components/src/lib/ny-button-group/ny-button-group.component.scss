@@ -30,6 +30,10 @@
         &.outline {
             border: 1px solid $black;
         }
+
+        &:hover {
+            filter: brightness(85%);
+        }
     }
 
     &.light {
@@ -39,10 +43,13 @@
         &.outline {
             border: 1px solid $white;
         }
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 
     &:hover {
         cursor: pointer;
-        filter: brightness(85%);
     }
 }
