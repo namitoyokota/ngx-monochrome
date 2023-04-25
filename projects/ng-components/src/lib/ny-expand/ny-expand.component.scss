@@ -6,7 +6,7 @@
     border-radius: 5px;
 
     .title,
-    .description {
+    .content {
         padding: 5px 10px;
     }
 
@@ -28,7 +28,7 @@
             background-color: $gray;
         }
 
-        .description {
+        .content {
             border-top: 1px solid $white;
         }
     }
@@ -42,7 +42,7 @@
             background-color: rgb(243 244 246);
         }
 
-        .description {
+        .content {
             border-top: 1px solid $gray;
         }
     }

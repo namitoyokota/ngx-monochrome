@@ -9,17 +9,14 @@ export class NyExpandComponent {
     /** Text to display as a button */
     @Input() title = '';
 
-    /** Description to display on title click */
-    @Input() description = '';
-
     /** Whether to display in dark mode */
     @Input() dark = false;
 
-    /** Wether to display description by expanding */
-    showDescription = true;
+    /** Wether to display content by expanding */
+    showContent = true;
 
-    /** Show or hide description */
+    /** Show or hide content */
     toggleExpansion(): void {
-        this.showDescription = !this.showDescription;
+        this.showContent = !this.showContent;
     }
 }

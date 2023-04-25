@@ -3,7 +3,7 @@
         <span>{{ title }}</span>
     </div>
 
-    <div class="description" *ngIf="showDescription">
-        <span>{{ description }}</span>
+    <div class="content" *ngIf="showContent">
+        <ng-content></ng-content>
     </div>
 </div>
