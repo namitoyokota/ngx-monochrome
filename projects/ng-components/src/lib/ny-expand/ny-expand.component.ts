@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
     selector: 'ny-expand',
@@ -13,16 +13,14 @@ export class NyExpandComponent {
     @Input() dark = false;
 
     /** Wether to display content by expanding */
-    @Input('show')
-    set setShow(flag: boolean) {
-        this.showContent = flag;
-    }
+    @Input() show = true;
 
-    /** Wether to display content by expanding */
-    showContent = true;
+    /** Two-way binding for show property */
+    @Output() showChange = new EventEmitter<boolean>();
 
     /** Show or hide content */
     toggleExpansion(): void {
-        this.showContent = !this.showContent;
+        this.show = !this.show;
+        this.showChange.emit(this.show);
     }
 }

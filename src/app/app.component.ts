@@ -45,6 +45,8 @@ export class AppComponent {
     readonly NySize: typeof NySize = NySize;
     readonly NyLogoColor: typeof NyLogoColor = NyLogoColor;
 
+    show = false;
+
     echo(text?: string, value?: string): void {
         console.log(text, value ? ': ' + value : '');
     }

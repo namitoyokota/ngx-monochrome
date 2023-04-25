@@ -97,7 +97,7 @@
 
     <h2>Expand</h2>
     <div class="expand-list">
-        <ny-expand title="Title goes here" [show]="false" [dark]="darkMode">
+        <ny-expand title="Title goes here" [(show)]="show" [dark]="darkMode">
             <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -139,10 +139,5 @@
     <h2>Spinners</h2>
     <div class="spinner-list">
         <ny-spinner [dark]="darkMode"></ny-spinner>
-    </div>
-
-    <h2>Images</h2>
-    <div class="image-list">
-        <ny-image class="image-width" src="assets/favicon.png" [showLoading]="true" [fit]="fit"></ny-image>
     </div>
 </ny-page>
