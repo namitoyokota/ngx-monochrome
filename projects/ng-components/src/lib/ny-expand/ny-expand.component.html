@@ -1,0 +1,9 @@
+<div class="container" [class]="dark ? 'dark' : 'light'">
+    <div class="title" (click)="toggleExpansion()">
+        <span>{{ title }}</span>
+    </div>
+
+    <div class="description" *ngIf="showDescription">
+        <span>{{ description }}</span>
+    </div>
+</div>

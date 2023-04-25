@@ -18,6 +18,8 @@ export * from './lib/ny-caption/ny-caption.component';
 export * from './lib/ny-caption/ny-caption.module';
 export * from './lib/ny-divider/ny-divider.component';
 export * from './lib/ny-divider/ny-divider.module';
+export * from './lib/ny-expand/ny-expand.component';
+export * from './lib/ny-expand/ny-expand.module';
 export * from './lib/ny-icon/ny-icon.component';
 export * from './lib/ny-icon/ny-icon.module';
 export * from './lib/ny-image/ny-image.component';

@@ -1,0 +1,49 @@
+@import "../../../styles/variables.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+    .title,
+    .description {
+        padding: 5px 10px;
+    }
+
+    .title {
+        font-weight: 500;
+        border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &.dark {
+        border: 1px solid $white;
+        background-color: $black;
+        color: $white;
+
+        .title:hover {
+            background-color: $gray;
+        }
+
+        .description {
+            border-top: 1px solid $white;
+        }
+    }
+
+    &.light {
+        border: 1px solid $gray;
+        background-color: $white;
+        color: $black;
+
+        .title:hover {
+            background-color: rgb(243 244 246);
+        }
+
+        .description {
+            border-top: 1px solid $gray;
+        }
+    }
+}
