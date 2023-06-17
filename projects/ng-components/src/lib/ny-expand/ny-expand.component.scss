@@ -5,17 +5,30 @@
     flex-direction: column;
     border-radius: 8px;
 
-    .title,
-    .content {
-        padding: 5px 10px;
-    }
-
     .title {
         font-weight: 500;
         border-radius: 8px;
+        padding: 5px 10px;
 
         &:hover {
             cursor: pointer;
+        }
+    }
+
+    .content {
+        display: grid;
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        transition: grid-template-rows 0.5s;
+        padding: 0 10px;
+
+        &.show {
+            grid-template-rows: 1fr;
+            padding: 5px 10px;
+        }
+
+        .expandable {
+            min-height: 0;
         }
     }
 
@@ -28,7 +41,7 @@
             background-color: $gray;
         }
 
-        .content {
+        .show {
             border-top: 1px solid $white;
         }
     }
@@ -42,7 +55,7 @@
             background-color: rgb(243 244 246);
         }
 
-        .content {
+        .show {
             border-top: 1px solid $gray;
         }
     }

@@ -3,7 +3,9 @@
         <span>{{ title }}</span>
     </div>
 
-    <div class="content" *ngIf="show">
-        <ng-content></ng-content>
+    <div class="content" [class]="show ? 'show' : ''">
+        <div class="expandable">
+            <ng-content></ng-content>
+        </div>
     </div>
 </div>
