@@ -58,6 +58,22 @@
         <ny-switch [options]="menuOptionsDark" [dark]="darkMode" (changed)="echo('switch changed', $event.text)"></ny-switch>
     </div>
 
+    <h2>Progress</h2>
+    <div class="progress-list">
+        <ny-progress [value]="25"></ny-progress>
+        <ny-progress [value]="50"></ny-progress>
+        <ny-progress [value]="75"></ny-progress>
+        <ny-progress [value]="100"></ny-progress>
+    </div>
+
+    <h2>Slider</h2>
+    <div class="slider-list">
+        <ny-slider [value]="25" (changed)="echo('slider changed', $event.toString())"></ny-slider>
+        <ny-slider [value]="50" (changed)="echo('slider changed', $event.toString())"></ny-slider>
+        <ny-slider [value]="75" (changed)="echo('slider changed', $event.toString())"></ny-slider>
+        <ny-slider [value]="100" (changed)="echo('slider changed', $event.toString())"></ny-slider>
+    </div>
+
     <h2>Menu</h2>
     <div class="menu-list">
         <ny-menu
