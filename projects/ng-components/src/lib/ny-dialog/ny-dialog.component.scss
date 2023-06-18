@@ -1,0 +1,11 @@
+dialog {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.wrapper,
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

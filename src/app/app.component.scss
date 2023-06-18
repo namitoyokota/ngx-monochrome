@@ -20,7 +20,8 @@
 .hyperlink-list,
 .logo-list,
 .switch-list,
-.menu-list {
+.menu-list,
+.dialog-list {
     display: flex;
     column-gap: 10px;
     row-gap: 10px;
@@ -34,7 +35,9 @@
 .expand-list,
 .divider-list,
 .image-list,
-.legend-list {
+.legend-list,
+.progress-list,
+.slider-list {
     display: flex;
     flex-direction: column;
     row-gap: 10px;

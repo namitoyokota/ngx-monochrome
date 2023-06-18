@@ -74,6 +74,13 @@
         <ny-slider [value]="100" (changed)="echo('slider changed', $event.toString())"></ny-slider>
     </div>
 
+    <h2>Dialog</h2>
+    <div class="dialog-list">
+        <ny-dialog text="Open Dialog">
+            <span>Content inside of the dialog</span>
+        </ny-dialog>
+    </div>
+
     <h2>Menu</h2>
     <div class="menu-list">
         <ny-menu
