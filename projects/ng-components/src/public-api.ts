@@ -28,6 +28,8 @@ export * from './lib/ny-input/ny-input.component';
 export * from './lib/ny-input/ny-input.module';
 export * from './lib/ny-label/ny-label.component';
 export * from './lib/ny-label/ny-label.module';
+export * from './lib/ny-legend/ny-legend.component';
+export * from './lib/ny-legend/ny-legend.module';
 export * from './lib/ny-link/ny-link.component';
 export * from './lib/ny-link/ny-link.module';
 export * from './lib/ny-logo/ny-logo.component';
