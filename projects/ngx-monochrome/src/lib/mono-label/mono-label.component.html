@@ -1,0 +1,11 @@
+<div class="message" [ngClass]="dark ? 'dark' : 'light'">
+    <!-- Text -->
+    <ng-container *ngIf="text">
+        <span>{{ text }}</span>
+    </ng-container>
+
+    <!-- Close -->
+    <ng-container *ngIf="close">
+        <mono-icon [config]="dark ? closeIconDark : closeIconLight" (clicked)="closeLabel()"></mono-icon>
+    </ng-container>
+</div>

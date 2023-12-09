@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NyFitType, NyIconConfig, NyIconSize, NyIconType, NyMenuOption, NySize } from 'ngx-monochrome';
+import { MonoFitType, MonoIconConfig, MonoIconSize, MonoIconType, MonoMenuOption, MonoSize } from 'ngx-monochrome';
 
 @Component({
     selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent {
     darkMode = false;
 
     /** Toggles current theme */
-    toggleTheme(menu: NyMenuOption): void {
+    toggleTheme(menu: MonoMenuOption): void {
         this.darkMode = menu.icon.name === 'fa-sun';
 
         this.iconConfig1.dark = this.darkMode;
@@ -20,28 +20,28 @@ export class AppComponent {
     }
 
     // Icon Configurations
-    readonly iconConfig1 = new NyIconConfig('fa-star', NyIconType.solid, NyIconSize.small, this.darkMode);
-    readonly iconConfig2 = new NyIconConfig('fa-bookmark', NyIconType.solid, NyIconSize.medium, this.darkMode);
-    readonly iconConfig3 = new NyIconConfig('fa-magnifying-glass', NyIconType.solid, NyIconSize.large, this.darkMode);
+    readonly iconConfig1 = new MonoIconConfig('fa-star', MonoIconType.solid, MonoIconSize.small, this.darkMode);
+    readonly iconConfig2 = new MonoIconConfig('fa-bookmark', MonoIconType.solid, MonoIconSize.medium, this.darkMode);
+    readonly iconConfig3 = new MonoIconConfig('fa-magnifying-glass', MonoIconType.solid, MonoIconSize.large, this.darkMode);
 
     /** Configurations to display close icon */
-    readonly infoIconConfig = new NyIconConfig('fa-circle-info', NyIconType.solid, NyIconSize.medium, false, false);
-    readonly questionIconConfig = new NyIconConfig('fa-circle-question', NyIconType.solid, NyIconSize.medium, false, false);
+    readonly infoIconConfig = new MonoIconConfig('fa-circle-info', MonoIconType.solid, MonoIconSize.medium, false, false);
+    readonly questionIconConfig = new MonoIconConfig('fa-circle-question', MonoIconType.solid, MonoIconSize.medium, false, false);
 
-    readonly menuOptionsLight = [new NyMenuOption('Option 1', this.iconConfig1), new NyMenuOption('Option 2', this.iconConfig1)];
-    readonly menuOptionsDark = [new NyMenuOption('Option 1', this.iconConfig2), new NyMenuOption('Option 2', this.iconConfig2)];
+    readonly menuOptionsLight = [new MonoMenuOption('Option 1', this.iconConfig1), new MonoMenuOption('Option 2', this.iconConfig1)];
+    readonly menuOptionsDark = [new MonoMenuOption('Option 1', this.iconConfig2), new MonoMenuOption('Option 2', this.iconConfig2)];
 
     readonly buttonOptionsLight = [
-        new NyMenuOption('Button Group 1', this.iconConfig2),
-        new NyMenuOption('Button Group 2', this.iconConfig2),
+        new MonoMenuOption('Button Group 1', this.iconConfig2),
+        new MonoMenuOption('Button Group 2', this.iconConfig2),
     ];
     readonly buttonOptionsDark = [
-        new NyMenuOption('Button Group 1', this.iconConfig1),
-        new NyMenuOption('Button Group 2', this.iconConfig1),
+        new MonoMenuOption('Button Group 1', this.iconConfig1),
+        new MonoMenuOption('Button Group 2', this.iconConfig1),
     ];
 
-    readonly fit = NyFitType.width;
-    readonly NySize: typeof NySize = NySize;
+    readonly fit = MonoFitType.width;
+    readonly MonoSize: typeof MonoSize = MonoSize;
 
     show = false;
 

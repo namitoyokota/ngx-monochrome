@@ -30,20 +30,20 @@ yarn add ngx-monochrome
 
 Here is a list fo components that are currently in this library:
 
--   ny-button
--   ny-button-group
--   ny-caption
--   ny-divider
--   ny-icon
--   ny-image
--   ny-label
--   ny-link
--   ny-menu
--   ny-message
--   ny-page
--   ny-spinner
--   ny-switch
--   ny-theme-switch
+-   mono-button
+-   mono-button-group
+-   mono-caption
+-   mono-divider
+-   mono-icon
+-   mono-image
+-   mono-label
+-   mono-link
+-   mono-menu
+-   mono-message
+-   mono-page
+-   mono-spinner
+-   mono-switch
+-   mono-theme-switch
 
 Documentation for each component is coming soon.
 
@@ -55,14 +55,14 @@ Import module for a component to try
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {
-    NyButtonModule
+    MonoButtonModule
 } from 'ngx-monochrome';
 
 @NgModule({
     declarations: [AppComponent],
     imports: [
         BrowserModule,
-        NyButtonModule // ADD THIS LINE
+        MonoButtonModule // ADD THIS LINE
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -73,7 +73,7 @@ export AppModule
 Use component in HTML
 
 ```HTML
-<ny-button text="Button" (clicked)="echo('button clicked')"></ny-button>
+<mono-button text="Button" (clicked)="echo('button clicked')"></mono-button>
 ```
 
 ## Screenshot

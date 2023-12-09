@@ -1,151 +1,155 @@
 <div class="header">
     <h1>ngx-monochrome</h1>
-    <ny-theme-switch (changed)="toggleTheme($event)"></ny-theme-switch>
+    <mono-theme-switch (changed)="toggleTheme($event)"></mono-theme-switch>
 </div>
 
-<ny-page [dark]="darkMode">
+<mono-page [dark]="darkMode">
     <h2>Icons</h2>
     <div class="icon-list">
-        <ny-icon [config]="iconConfig1"></ny-icon>
-        <ny-icon [config]="iconConfig2"></ny-icon>
-        <ny-icon [config]="iconConfig3"></ny-icon>
+        <mono-icon [config]="iconConfig1"></mono-icon>
+        <mono-icon [config]="iconConfig2"></mono-icon>
+        <mono-icon [config]="iconConfig3"></mono-icon>
     </div>
 
     <h2>Buttons</h2>
     <div class="button-list">
-        <ny-button text="Button" [dark]="darkMode" (clicked)="echo('button clicked')"></ny-button>
-        <ny-button
+        <mono-button text="Button" [dark]="darkMode" (clicked)="echo('button clicked')"></mono-button>
+        <mono-button
             text="Outline Button"
             [dark]="darkMode"
             [outline]="true"
             [iconConfig]="iconConfig2"
             (clicked)="echo('button clicked')"
-        ></ny-button>
+        ></mono-button>
     </div>
-    <ny-button text="Disabled Button" [disabled]="true" [dark]="darkMode" (clicked)="echo('button clicked')"></ny-button>
+    <mono-button text="Disabled Button" [disabled]="true" [dark]="darkMode" (clicked)="echo('button clicked')"></mono-button>
 
     <h2>Button Groups</h2>
     <div class="button-group-list">
-        <ny-button-group [buttons]="buttonOptionsLight" [dark]="darkMode" (clicked)="echo('button group', $event.text)"></ny-button-group>
-        <ny-button-group
+        <mono-button-group
+            [buttons]="buttonOptionsLight"
+            [dark]="darkMode"
+            (clicked)="echo('button group', $event.text)"
+        ></mono-button-group>
+        <mono-button-group
             [dark]="darkMode"
             [outline]="true"
             [buttons]="buttonOptionsLight"
             (clicked)="echo('button group', $event.text)"
-        ></ny-button-group>
+        ></mono-button-group>
     </div>
 
     <h2>Inputs</h2>
     <div class="input-list">
-        <ny-input placeholder="John Doe" [dark]="darkMode" [clear]="true" (changed)="echo('text changed', $event)"></ny-input>
-        <ny-input
+        <mono-input placeholder="John Doe" [dark]="darkMode" [clear]="true" (changed)="echo('text changed', $event)"></mono-input>
+        <mono-input
             placeholder="Search"
             [dark]="darkMode"
             [iconConfig]="iconConfig1"
             [clear]="true"
             (searched)="echo('search', $event)"
-        ></ny-input>
+        ></mono-input>
     </div>
 
     <h2>Labels</h2>
     <div class="label-list">
-        <ny-label text="Label" [dark]="darkMode"></ny-label>
-        <ny-label text="Label" [dark]="darkMode" [close]="true" (closed)="echo('label closed')"></ny-label>
+        <mono-label text="Label" [dark]="darkMode"></mono-label>
+        <mono-label text="Label" [dark]="darkMode" [close]="true" (closed)="echo('label closed')"></mono-label>
     </div>
 
     <h2>Switch</h2>
     <div class="switch-list">
-        <ny-switch [options]="menuOptionsDark" [dark]="darkMode" (changed)="echo('switch changed', $event.text)"></ny-switch>
+        <mono-switch [options]="menuOptionsDark" [dark]="darkMode" (changed)="echo('switch changed', $event.text)"></mono-switch>
     </div>
 
     <h2>Progress</h2>
     <div class="progress-list">
-        <ny-progress [value]="25"></ny-progress>
-        <ny-progress [value]="50"></ny-progress>
-        <ny-progress [value]="75"></ny-progress>
-        <ny-progress [value]="100"></ny-progress>
+        <mono-progress [value]="25"></mono-progress>
+        <mono-progress [value]="50"></mono-progress>
+        <mono-progress [value]="75"></mono-progress>
+        <mono-progress [value]="100"></mono-progress>
     </div>
 
     <h2>Slider</h2>
     <div class="slider-list">
-        <ny-slider [value]="25" (changed)="echo('slider changed', $event.toString())"></ny-slider>
-        <ny-slider [value]="50" (changed)="echo('slider changed', $event.toString())"></ny-slider>
-        <ny-slider [value]="75" (changed)="echo('slider changed', $event.toString())"></ny-slider>
-        <ny-slider [value]="100" (changed)="echo('slider changed', $event.toString())"></ny-slider>
+        <mono-slider [value]="25" (changed)="echo('slider changed', $event.toString())"></mono-slider>
+        <mono-slider [value]="50" (changed)="echo('slider changed', $event.toString())"></mono-slider>
+        <mono-slider [value]="75" (changed)="echo('slider changed', $event.toString())"></mono-slider>
+        <mono-slider [value]="100" (changed)="echo('slider changed', $event.toString())"></mono-slider>
     </div>
 
     <h2>Dialog</h2>
     <div class="dialog-list">
-        <ny-dialog text="Open Dialog">
+        <mono-dialog text="Open Dialog">
             <span>Content inside of the dialog</span>
-        </ny-dialog>
+        </mono-dialog>
     </div>
 
     <h2>Menu</h2>
     <div class="menu-list">
-        <ny-menu
+        <mono-menu
             text="Context Menu"
             [iconConfig]="iconConfig2"
             [options]="menuOptionsLight"
             (selected)="echo('selected menu', $event.text)"
-        ></ny-menu>
+        ></mono-menu>
     </div>
 
     <h2>Messages</h2>
     <div class="message-list">
-        <ny-message text="Message" [dark]="darkMode"></ny-message>
-        <ny-message
+        <mono-message text="Message" [dark]="darkMode"></mono-message>
+        <mono-message
             text="Message"
             [dark]="darkMode"
             [iconConfig]="infoIconConfig"
             [close]="true"
             (closed)="echo('message closed')"
-        ></ny-message>
+        ></mono-message>
     </div>
 
     <h2>Legends</h2>
     <div class="legend-list">
-        <ny-legend text="Header">
+        <mono-legend text="Header">
             <span>Text</span>
-        </ny-legend>
+        </mono-legend>
     </div>
 
     <h2>Cards</h2>
     <div class="card-list">
-        <ny-card [dark]="darkMode">
+        <mono-card [dark]="darkMode">
             <span>Card</span>
-        </ny-card>
+        </mono-card>
     </div>
 
     <h2>Dividers</h2>
     <div class="divider-list">
-        <ny-divider [dark]="darkMode"></ny-divider>
+        <mono-divider [dark]="darkMode"></mono-divider>
     </div>
 
     <h2>Captions</h2>
     <div class="caption-list">
-        <ny-caption text="This is a message for the user" [dark]="darkMode"></ny-caption>
+        <mono-caption text="This is a message for the user" [dark]="darkMode"></mono-caption>
     </div>
 
     <h2>Links</h2>
     <div class="hyperlink-list">
-        <ny-link src="https://www.github.com/namitoyokota" text="GitHub" [dark]="darkMode"></ny-link>
+        <mono-link src="https://www.github.com/namitoyokota" text="GitHub" [dark]="darkMode"></mono-link>
     </div>
 
     <h2>Expand</h2>
     <div class="expand-list">
-        <ny-expand title="Title goes here" [(show)]="show" [dark]="darkMode">
+        <mono-expand title="Title goes here" [(show)]="show" [dark]="darkMode">
             <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </span>
-        </ny-expand>
+        </mono-expand>
     </div>
 
     <h2>Spinners</h2>
     <div class="spinner-list">
-        <ny-spinner [dark]="darkMode"></ny-spinner>
+        <mono-spinner [dark]="darkMode"></mono-spinner>
     </div>
-</ny-page>
+</mono-page>

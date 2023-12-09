@@ -1,0 +1,9 @@
+<mono-button [text]="text" (clicked)="open()"> </mono-button>
+
+<dialog #dialog>
+    <div class="wrapper">
+        <ng-content class="content"></ng-content>
+
+        <mono-button text="Close" (clicked)="close()"></mono-button>
+    </div>
+</dialog>

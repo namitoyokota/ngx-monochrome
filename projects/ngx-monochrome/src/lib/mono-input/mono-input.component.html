@@ -1,0 +1,19 @@
+<!-- Input -->
+<input
+    class="input"
+    type="text"
+    [class]="dark ? 'dark' : 'light'"
+    [placeholder]="placeholder"
+    [(ngModel)]="text"
+    (keyup)="textChanged()"
+    (keyup.enter)="search()"
+/>
+
+<!-- Icons -->
+<div *ngIf="(clear && text) || iconConfig" class="icon-pane">
+    <!-- Clear Icon -->
+    <mono-icon *ngIf="clear && text" [config]="dark ? closeIconConfigDark : closeIconConfigLight" (clicked)="clearText()"></mono-icon>
+
+    <!-- Custom Icon -->
+    <mono-icon *ngIf="!!iconConfig" [config]="iconConfig"></mono-icon>
+</div>

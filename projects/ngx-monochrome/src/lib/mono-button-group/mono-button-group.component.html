@@ -1,0 +1,19 @@
+<div class="button-list">
+    <div
+        *ngFor="let button of buttons"
+        class="button"
+        [class]="dark ? 'dark' : 'light'"
+        [class.outline]="outline"
+        (click)="buttonClicked(button)"
+    >
+        <!-- Icon -->
+        <ng-container *ngIf="button.icon">
+            <mono-icon [config]="button.icon"></mono-icon>
+        </ng-container>
+
+        <!-- Text -->
+        <ng-container *ngIf="button.text">
+            <span>{{ button.text }}</span>
+        </ng-container>
+    </div>
+</div>

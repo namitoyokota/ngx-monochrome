@@ -1,0 +1,5 @@
+<!-- Loading Indicator -->
+<mono-spinner [hidden]="showLoading || loaded"></mono-spinner>
+
+<!-- Display Image -->
+<img [hidden]="!loaded" [class]="fit" [src]="src" (load)="loaded = true" />
