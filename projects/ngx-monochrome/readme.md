@@ -38,7 +38,6 @@ Here is a list fo components that are currently in this library:
 -   ny-image
 -   ny-label
 -   ny-link
--   ny-logo
 -   ny-menu
 -   ny-message
 -   ny-page
