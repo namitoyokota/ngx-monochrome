@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NyColor, NyFitType, NyIconConfig, NyIconSize, NyIconType, NyLogoColor, NyMenuOption, NySize } from '@namitoyokota/ng-components';
+import { NyColor, NyFitType, NyIconConfig, NyIconSize, NyIconType, NyLogoColor, NyMenuOption, NySize } from 'ngx-monochrome';
 
 @Component({
     selector: 'app-root',

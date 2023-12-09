@@ -1281,9 +1281,9 @@
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@namitoyokota/ng-components@latest":
+"@namitoyokota/ngx-monochrome@latest":
   version "0.1.13"
-  resolved "https://registry.npmjs.org/@namitoyokota/ng-components/-/ng-components-0.1.13.tgz"
+  resolved "https://registry.npmjs.org/@namitoyokota/ngx-monochrome/-/ngx-monochrome-0.1.13.tgz"
   integrity sha512-tZBZGGhCPTKx/GxCTlyYloG17I3caay23hf1fwGnErjZoTILeAu0tw5iwxwhVomoJQn26F5XyBas07FChLO4PQ==
   dependencies:
     tslib "^2.3.0"

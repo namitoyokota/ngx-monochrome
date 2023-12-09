@@ -15,7 +15,7 @@
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "paths": {
-            "@namitoyokota/ng-components": ["dist/ng-components"]
+            "ngx-monochrome": ["dist/ngx-monochrome"]
         },
         "importHelpers": true,
         "target": "ES2022",

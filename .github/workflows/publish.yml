@@ -17,8 +17,8 @@ jobs:
               uses: EndBug/version-check@v1
               id: check
               with:
-                  file-name: ./projects/ng-components/package.json
-                  file-url: https://unpkg.com/@namitoyokota/ng-components@latest/package.json
+                  file-name: ./projects/ngx-monochrome/package.json
+                  file-url: https://unpkg.com/@namitoyokota/ngx-monochrome@latest/package.json
                   static-checking: localIsNew
 
             - name: Version Update Detected
@@ -39,6 +39,6 @@ jobs:
 
             - name: Publish to NPM
               if: steps.check.outputs.changed == 'true'
-              run: npm publish ./dist/ng-components
+              run: npm publish ./dist/ngx-monochrome
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

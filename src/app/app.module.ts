@@ -23,7 +23,7 @@ import {
     NySpinnerModule,
     NySwitchModule,
     NyThemeSwitchModule,
-} from '@namitoyokota/ng-components';
+} from 'ngx-monochrome';
 
 import { AppComponent } from './app.component';
 

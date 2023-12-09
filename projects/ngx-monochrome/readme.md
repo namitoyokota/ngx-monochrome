@@ -1,29 +1,29 @@
-# @namitoyokota/ng-components
+# ngx-monochrome
 
 > This npm package is created for my personal use. It is a component library with black and white style.
 
-<!-- [![GitHub](https://img.shields.io/github/stars/namitoyokota/ng-components?style=social)](https://github.com/namitoyokota/ng-components) -->
+<!-- [![GitHub](https://img.shields.io/github/stars/namitoyokota/ngx-monochrome?style=social)](https://github.com/namitoyokota/ngx-monochrome) -->
 
 <!-- [![Twitter](https://img.shields.io/twitter/follow/namitoyokota?style=social)](https://twitter.com/namitoyokota) -->
 
 ## Demo
 
-See how components are using in this [demo](https://ng-components.namito.wiki/).
+See how components are using in this [demo](https://ngx-monochrome.namito.wiki/).
 
 ## Installation
 
-ng-components is available as an [npm package](https://www.npmjs.com/package/@namitoyokota/ng-components).
+ngx-monochrome is available as an [npm package](https://www.npmjs.com/package/ngx-monochrome).
 
 You can install this package either by using npm:
 
 ```
-npm install @namitoyokota/ng-components
+npm install ngx-monochrome
 ```
 
 or by using yarn:
 
 ```
-yarn add @namitoyokota/ng-components
+yarn add ngx-monochrome
 ```
 
 ## Components
@@ -57,7 +57,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {
     NyButtonModule
-} from '@namitoyokota/ng-components';
+} from 'ngx-monochrome';
 
 @NgModule({
     declarations: [AppComponent],

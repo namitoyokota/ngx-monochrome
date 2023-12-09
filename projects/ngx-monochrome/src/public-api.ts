@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ng-components
+ * Public API Surface of ngx-monochrome
  */
 
 export * from './lib/abstractions/ny-color';
