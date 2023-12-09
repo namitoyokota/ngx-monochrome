@@ -1,7 +1,7 @@
 {
     "name": "ngx-monochrome",
-    "version": "0.1.4",
-    "description": "Angular component library for myself",
+    "version": "0.1.5",
+    "description": "Angular component library in black and white theme",
     "author": {
         "name": "Namito Yokota",
         "email": "namitoyokota@icloud.com"
