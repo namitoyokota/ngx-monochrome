@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NyColor, NyFitType, NyIconConfig, NyIconSize, NyIconType, NyMenuOption, NySize } from 'ngx-monochrome';
+import { NyFitType, NyIconConfig, NyIconSize, NyIconType, NyMenuOption, NySize } from 'ngx-monochrome';
 
 @Component({
     selector: 'app-root',
@@ -41,7 +41,6 @@ export class AppComponent {
     ];
 
     readonly fit = NyFitType.width;
-    readonly NyColor: typeof NyColor = NyColor;
     readonly NySize: typeof NySize = NySize;
 
     show = false;

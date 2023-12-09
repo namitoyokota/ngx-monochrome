@@ -2,7 +2,6 @@
  * Public API Surface of ngx-monochrome
  */
 
-export * from './lib/abstractions/ny-color';
 export * from './lib/abstractions/ny-fit-type';
 export * from './lib/abstractions/ny-icon-config';
 export * from './lib/abstractions/ny-icon-size';
