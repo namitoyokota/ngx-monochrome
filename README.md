@@ -8,8 +8,9 @@
 
 ## to do
 
--   [ ] ny-infinite-scroll
--   [ ] rich text editor
+-   [ ] mono-infinite-scroll
+-   [ ] mono-editor
+-   [ ] bindable to slots
 
 ## screenshot
 
