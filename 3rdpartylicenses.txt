@@ -10,7 +10,7 @@ MIT
 @angular/platform-browser
 MIT
 
-@namitoyokota/ng-components
+ngx-monochrome
 
 rxjs
 Apache-2.0
