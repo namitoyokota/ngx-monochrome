@@ -8,7 +8,7 @@
 
 ## Demo
 
-See how components are using in this [demo](https://ngx-monochrome.namito.wiki/).
+See how components are using in this [demo](https://monochrome.namitoyokota.com/).
 
 ## Installation
 
