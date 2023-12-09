@@ -9,6 +9,7 @@
 ## to do
 
 -   [ ] ny-infinite-scroll
+-   [ ] rich text editor
 
 ## screenshot
 
