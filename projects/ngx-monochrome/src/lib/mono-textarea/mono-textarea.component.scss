@@ -1,5 +1,9 @@
 @import "../../../styles/variables.scss";
 
+:host {
+    display: flex;
+}
+
 .textarea {
     font-family: inherit;
     font-size: 14px;
