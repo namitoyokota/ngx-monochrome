@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+.textarea {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid $gray;
+    resize: none;
+    width: 100%;
+
+    &.dark {
+        color: $white;
+        background-color: $black;
+    }
+
+    &.light {
+        color: $black;
+        background-color: $white;
+    }
+
+    &:focus {
+        outline: none;
+
+        &.dark {
+            border-color: $white;
+        }
+
+        &.light {
+            border-color: $black;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<textarea
+    class="textarea"
+    [class]="dark ? 'dark' : 'light'"
+    [placeholder]="placeholder"
+    [rows]="rows"
+    [(ngModel)]="text"
+    (keyup)="textChanged()"
+>
+</textarea>

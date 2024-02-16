@@ -48,5 +48,8 @@ export * from './lib/mono-spinner/mono-spinner.component';
 export * from './lib/mono-spinner/mono-spinner.module';
 export * from './lib/mono-switch/mono-switch.component';
 export * from './lib/mono-switch/mono-switch.module';
+export * from './lib/mono-textarea/mono-textarea.component';
+export * from './lib/mono-textarea/mono-textarea.module';
 export * from './lib/mono-theme-switch/mono-theme-switch.component';
 export * from './lib/mono-theme-switch/mono-theme-switch.module';
+

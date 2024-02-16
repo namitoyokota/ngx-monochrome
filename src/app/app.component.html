@@ -51,6 +51,23 @@
         ></mono-input>
     </div>
 
+    <h2>Textareas</h2>
+    <div class="input-list">
+        <mono-textarea placeholder="John Doe" [dark]="darkMode" (changed)="echo('text changed', $event)"></mono-textarea>
+    </div>
+
+    <h2>Inputs</h2>
+    <div class="input-list">
+        <mono-input placeholder="John Doe" [dark]="darkMode" [clear]="true" (changed)="echo('text changed', $event)"></mono-input>
+        <mono-input
+            placeholder="Search"
+            [dark]="darkMode"
+            [iconConfig]="iconConfig1"
+            [clear]="true"
+            (searched)="echo('search', $event)"
+        ></mono-input>
+    </div>
+
     <h2>Labels</h2>
     <div class="label-list">
         <mono-label text="Label" [dark]="darkMode"></mono-label>

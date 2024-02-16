@@ -21,6 +21,7 @@ import {
     MonoSliderModule,
     MonoSpinnerModule,
     MonoSwitchModule,
+    MonoTextareaModule,
     MonoThemeSwitchModule,
 } from 'ngx-monochrome';
 
@@ -51,6 +52,7 @@ import { AppComponent } from './app.component';
         MonoProgressModule,
         MonoDialogModule,
         MonoCardModule,
+        MonoTextareaModule
     ],
     providers: [],
     bootstrap: [AppComponent],
