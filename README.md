@@ -1,17 +1,27 @@
-# ngx-monochrome
+![Website Preview](https://api.namitoyokota.com/assets/og-images/monochrome.png)
 
-## socials
+# monochrome.namitoyokota.com
 
-[![npm](https://img.shields.io/npm/v/ngx-monochrome)](https://www.npmjs.com/package/ngx-monochrome)
-[![github](https://img.shields.io/github/stars/namitoyokota/ngx-monochrome)](https://github.com/namitoyokota/ngx-monochrome)
-[![Twitter](https://img.shields.io/twitter/follow/namitoyokota?style=social)](https://twitter.com/namitoyokota)
+-   **Framework**: [Angular](https://angular.io/)
+-   **Deployment**: [Vercel](https://vercel.com)
+-   **Registry**: [npm](https://www.npmjs.com/)
 
-## to do
+## Codebase
 
--   [ ] mono-infinite-scroll
--   [ ] mono-editor
+-   `projects/*` - Component library project
+-   `src/*` - Testbed
+
+## Running Locally
+
+```shell
+$ git clone https://github.com/namitoyokota/ngx-monochrome.git
+$ cd ngx-monochrome
+$ yarn install
+$ yarn build:lib
+$ yarn start
+```
+
+## Next Tasks
+
+-   [ ] mono-rich-editor
 -   [ ] bindable to slots
-
-## screenshot
-
-![Screenshot](https://i.imgur.com/nSs513v.png)
