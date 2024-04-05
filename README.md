@@ -24,4 +24,5 @@ $ yarn start
 ## Next Tasks
 
 -   [ ] mono-rich-editor
+-   [ ] mono-image
 -   [ ] bindable to slots
